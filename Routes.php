@@ -5,3 +5,9 @@ Route::set('about-us', function () {
     AboutUsController::view('AboutUs');
 });
 
+Route::set('home', function () {
+
+    HomeController::view('home');
+});
+
+
