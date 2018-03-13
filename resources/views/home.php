@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-        <link rel="stylesheet" type="text/css" href="/resources/assets/css/navbar.css">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/navbar.css"/>
     </head>
 
     <body>
 
-    <h1>asdasd</h1>
-        <?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/elements/navbar.php') ?>
+        <?php require_once('/../elements/navbar.php') ?>
+        <?php require_once('/../elements/sidebar.php') ?>
 
     </body>
 
