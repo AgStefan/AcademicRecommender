@@ -6,8 +6,8 @@
 
     <body>
 
-        <?php require_once('/../elements/navbar.php') ?>
-        <?php require_once('/../elements/sidebar.php') ?>
+    <?php require_once('./../resources/elements/navbar.php') ?>
+    <?php require_once('./../resources/elements/sidebar.php') ?>
 
     </body>
 
