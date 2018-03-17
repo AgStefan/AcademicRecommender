@@ -1,4 +1,4 @@
-ul{
+.navbar-wrapper ul{
     background-color: #E6E6FA;
     list-style-type: none;
     margin: 0;
@@ -7,14 +7,14 @@ ul{
     border: 1px solid #e7e7e7;
 }
 
-li{
+.navbar-wrapper li{
     display: inline;
     float: left;
     font-size: 18px;
 }
 
 
-li a {
+.navbar-wrapper li a {
     display: block;
     color: #000;
     padding: 14px 30px;
@@ -22,16 +22,16 @@ li a {
     text-align: center;
 }
 
-li a.active {
+.navbar-wrapper li a.active {
     color: 	#0000CD;
 }
 
-li a:hover:not(.active) {
+.navbar-wrapper li a:hover:not(.active) {
 
     color: white;
     background-color: #cfcfe1;
 }
 
-ul li.current {
+.navbar-wrapper ul li.current {
     background-color: #3f75a2;
 }
