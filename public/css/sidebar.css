@@ -1,19 +1,28 @@
 .sidebar-items-container {
     list-style-type: none;
-    background-color: #0e203d;
+    background-color: #313541;
     display: inline-block;
     margin: 0;
     height: 100%;
-    padding: 0;
+    padding: 50px 0 0 0;
 }
 
 .sidebar-items-container .sidebar-item {
-    padding: 18px 20px;
+
 }
 
+.sidebar-items-container .sidebar-item:hover {
+    background-color: #E44C6F;
+}
+
+.sidebar-items-container .sidebar-item:hover a {
+    color: white;
+}
 
 .sidebar-items-container  a {
-    padding: 18px 20px;
+    padding: 18px 25px;
+    font-weight: bold;
     color: gray;
     text-decoration: none;
+    display: block;
 }

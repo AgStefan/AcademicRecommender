@@ -4,7 +4,10 @@ body {
     height: 100%;
 }
 
-.content-left,
-.content-right {
+.content-left {
+    height: 100%;
+}
+
+.content-left {
     float: left;
 }
