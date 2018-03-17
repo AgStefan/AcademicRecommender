@@ -1,16 +1,19 @@
 .navbar-wrapper ul{
-    background-color: #E6E6FA;
+    background-color: #3a5158;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #e7e7e7;
+    border: 0px solid #e7e7e7;
+    height: 90px;
 }
 
 .navbar-wrapper li{
-    display: inline;
-    float: left;
-    font-size: 18px;
+    display: inline-block;
+    float: right;
+
+
+
 }
 
 
@@ -20,18 +23,22 @@
     padding: 14px 30px;
     text-decoration: none;
     text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 0.95em;
 }
 
 .navbar-wrapper li a.active {
     color: 	#0000CD;
+
 }
 
 .navbar-wrapper li a:hover:not(.active) {
 
     color: white;
-    background-color: #cfcfe1;
+    background-color: #40E0D0;
+    opacity: 0.65;
 }
 
 .navbar-wrapper ul li.current {
-    background-color: #3f75a2;
+    background-color: #4682B4;
 }
