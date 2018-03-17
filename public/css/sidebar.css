@@ -1,0 +1,19 @@
+.sidebar-items-container {
+    list-style-type: none;
+    background-color: #0e203d;
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+.sidebar-items-container .sidebar-item {
+    padding: 18px 20px;
+}
+
+
+.sidebar-items-container  a {
+    padding: 18px 20px;
+    color: gray;
+    text-decoration: none;
+}
