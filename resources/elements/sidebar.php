@@ -1,6 +1,4 @@
 
-<div class="app-sidebar">
-    <div class="app-sidebar-inner">
         <ul class="sidebar-items-container">
             <li class="sidebar-item">
                 <a href="account-settings">Account Settings</a>
@@ -21,5 +19,3 @@
                 <a href="support">Support</a>
             </li>
         </ul>
-    </div>
-</div>
