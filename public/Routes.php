@@ -35,3 +35,7 @@ Route::set('support', function () {
 
     HomeController::view('Support');
 });
+Route::set('signup', function () {
+
+    HomeController::view('SignUp');
+});

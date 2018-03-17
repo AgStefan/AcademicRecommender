@@ -18,21 +18,12 @@
 .navbar-wrapper li a {
     display: block;
     color: #FFFFFF;
-    padding: 14px 30px;
+    padding: 20px 50px;
     text-decoration: none;
     text-align: center;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 1.2em;
-    height: 60px;
-    width: 100px;
-}
 
-.navbar-wrapper li img {
-    max-width: 22px;
-    max-height: 30px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
 }
 
 .navbar-wrapper li a.active {
@@ -48,7 +39,15 @@
 }
 
 .navbar-wrapper ul li.current {
-    background-color: #4682B4;
+    background-color: #40E0D0;
 }
+
+.navbar-wrapper ul li img {
+     max-width: 22px;
+     max-height: 30px;
+     position: absolute;
+     top: 20px;
+     left: 15px;
+ }
 
 
