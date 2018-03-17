@@ -2,11 +2,11 @@
 
 
         <ul>
-            <li style="float: right"><a href="#About">About</a></li>
-            <li><a href="#FAQ">FAQ</a></li>
-            <li><a href="#Logout">Logout</a></li>
-            <li><a href="#Login">Login</a></li>
-            <li class="current"><a href="#Register">Register</a></li>
+            <li style="float: right; margin-right: 50px;"> <img src="./images/about_us.png"/> <a href="#About">About</a></li>
+            <li><img src="./images/faq_icon.png"  /> <a href="#FAQ">F A Q</a></li>
+            <li> <img src="./images/user_login.png" /> <a href="#Login">Login</a></li>
+            <li> <img src="./images/user_image.png"/> <a href="#Sign Up"> Sign Up</a></li>
+            <li> <img src="./images/home_icon.png"/> <a href="#Home"> Home</a></li>
         </ul>
 
 </div>
