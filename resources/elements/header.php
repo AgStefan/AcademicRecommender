@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="/css/sidebar.css"/>
     <link rel="stylesheet" type="text/css" href="/css/general-styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/AccountSettings.css"/>
 </head>
 
 <body>

@@ -39,3 +39,7 @@ Route::set('signup', function () {
 
     HomeController::view('SignUp');
 });
+Route::set('tops', function () {
+//    AboutUsController::showDefaultMessage();
+    HomeController::view('Tops');
+});
