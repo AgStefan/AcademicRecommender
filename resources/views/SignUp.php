@@ -4,10 +4,9 @@
     <link rel="stylesheet" type="text/css" href="/css/general-styles.css"/>
     <link rel="stylesheet" type="text/css" href="/css/SignUp.css"/>
 </head>
-<body>
 <?php require_once('./../resources/elements/navbar.php') ?>
 <div class="container">
-
+<form>
     <h1><img class="image2"  src="./images/sign_up_form.jpg"</img>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
@@ -44,6 +43,7 @@
         <button type="button" class="cancelbtn"> Back</button>
         <button type="submit" class="signupbtn">Sign Up</button>
 </div>
+</form>
     </div>
 </div>
 

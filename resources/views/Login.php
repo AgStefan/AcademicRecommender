@@ -7,7 +7,7 @@
 <body>
 <?php require_once('./../resources/elements/navbar.php') ?>
 <div class="container">
-
+<form>
     <h1><img class="image2"  src="./images/login_icon.png"</img>Login</h1>
     <p>Please fill in this form to acces your account.</p>
     <hr>
@@ -24,5 +24,6 @@
         <button type="button" class="cancelbtn"> Back</button>
         <button type="submit" class="signinbtn">Sign in</button>
 </div>
+</form>
     </div>
 </div>
