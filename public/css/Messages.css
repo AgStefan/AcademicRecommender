@@ -1,0 +1,30 @@
+.message-author p {
+    color: blue;
+}
+
+.message-content p {
+    color: darkgrey;
+}
+
+.message-content button {
+    float: right;
+    margin-top: -60px;
+    font-weight:bold;
+    background-color:midnightblue;
+    color:white;
+    padding:10px;
+    border:none;
+    margin-right:10px;
+}
+
+
+.message-wrapper
+{
+    border:2px solid #313541;
+    margin-bottom: 20px;
+}
+
+.message-author
+{
+    font-weight: bold;
+}

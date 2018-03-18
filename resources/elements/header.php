@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="/css/sidebar.css"/>
     <link rel="stylesheet" type="text/css" href="/css/general-styles.css"/>
     <link rel="stylesheet" type="text/css" href="/css/AccountSettings.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/Messages.css"/>
 </head>
 
 <body>
