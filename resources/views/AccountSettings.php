@@ -4,9 +4,10 @@
 <div class="content-right">
 
 <div class="AccountSettings">
-<h1 style="color:black" >Account Settings </h1>
+<h1 style="color:black"  >Account Settings </h1>
 
-    <div class="wrapper-input">
+    <form class="wrapper-input">
+
 
         <label for="username">Username</label>
         <input id="username" type="text" placeholder="Enter username">
@@ -22,7 +23,12 @@
 
         <label for="telephonechange">Telephone</label>
         <input id="telephonechange" type="text" placeholder="Enter new telephone number">
-    </div>
+        <div class="buttonwrapper">
+        <button class="btn" type="submit" >
+            Save
+        </button>
+        </div>
+    </form>
 
 </div>
 
