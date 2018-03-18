@@ -1,5 +1,5 @@
 .navbar-wrapper ul{
-    background-color: #3a5158;
+    background-color: #282c37;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,12 +34,12 @@
 .navbar-wrapper li:hover:not(.active) {
 
     color: white;
-    background-color: #40E0D0;
+    background-color: #0000990;
 
 }
 
 .navbar-wrapper ul li.current {
-    background-color: #40E0D0;
+    background-color: #3300CC;
 }
 
 .navbar-wrapper ul li img {

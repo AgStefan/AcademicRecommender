@@ -35,11 +35,15 @@ Route::set('support', function () {
 
     HomeController::view('Support');
 });
+
 Route::set('signup', function () {
 
     HomeController::view('SignUp');
 });
-Route::set('tops', function () {
+Route::set('login', function () {
+
+    HomeController::view('Login');
+});Route::set('tops', function () {
 //    AboutUsController::showDefaultMessage();
     HomeController::view('Tops');
 });
