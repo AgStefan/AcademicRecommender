@@ -14,6 +14,21 @@
 {text-align:center
 }
 
+hr {
+    border: 2px solid #3a5158;
+    margin-bottom: 25px;
+}
+
+.image1{
+    max-width: 22px;
+    max-height: 20px;
+    display:inline-block;
+}
+.image2{
+    max-width: 38px;
+    max-height: 35px;
+
+}
 .AccountSettings{
 
 }
@@ -23,7 +38,7 @@
 
 }
 .wrapper-input{
-    width:50%;
+    width:40%;
     display: inline-block;
 }
 .wrapper-input input{
