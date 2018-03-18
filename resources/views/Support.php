@@ -1,0 +1,32 @@
+<?php require_once('./../resources/elements/header.php') ?>
+<div class="content-right">
+
+    <div class="Support">
+        <h1 style="color:black"  >Support </h1>
+        <p>In case you need help, please fill in the form. Our administrator will answer as soon as possible.</p>
+        <br>
+        <br>
+
+        <form class="support-wrapper">
+
+
+            <label for="name"><b>Name</b></label>
+            <input id="name" type="text" placeholder="Enter name">
+
+            <label for="email"><b>Email</b></label>
+            <input id="email" type="email" placeholder="Enter email">
+
+            <label for="subject"><b>Message</b></label>
+            <textarea id="subject" name="subject" placeholder="Write your message" style="height:100px"></textarea>
+
+            <div class="button-wrapper">
+                <button class="buttons" type="submit" >
+                    Send
+                </button>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+<?php require_once ("./../resources/elements/footer.php"); ?>

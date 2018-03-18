@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/css/AccountSettings.css"/>
     <link rel="stylesheet" type="text/css" href="/css/Disciplines.css"/>
     <link rel="stylesheet" type="text/css" href="/css/Messages.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/Support.css"/>
 </head>
 
 <body>
