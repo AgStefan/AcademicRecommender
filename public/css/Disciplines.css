@@ -5,6 +5,22 @@
 }
 .disciplinewrapper
 {
-    background-color: lightgray;
-    margin-bottom: 10px;
+    background-color: lavenderblush;
+    margin-bottom: 5px;
+    width:50%;
+    padding :0px;
+
+}
+.Ratting{
+
+    margin-left:15px;
+    margin-right: 50px;
+    font-size: 24px;
+}
+p{
+
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }

@@ -9,8 +9,11 @@
 
     <form class="wrapper-input">
         <hr>
-        <img class="image1"  src="./images/username.png"</img>
-        <label for="username">Username</label>
+
+        <label for="username">
+            <img class="image1"  src="./images/username.png"</img>
+            <span>Username</span>
+        </label>
         <input id="username" type="text" placeholder="Enter username">
 
 
