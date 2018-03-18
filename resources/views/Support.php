@@ -2,8 +2,8 @@
 <div class="content-right">
 
     <div class="Support">
-        <h1 style="color:black"  >Support </h1>
-        <p>In case you need help, please fill in the form. Our administrator will answer as soon as possible.</p>
+        <h1><img class="image2"  src="./images/download.png"</img>Support</h1>
+        <p>In case you need help, please fill in the form.</p>
         <br>
         <br>
 

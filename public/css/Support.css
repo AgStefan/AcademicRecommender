@@ -1,0 +1,51 @@
+.Support .buttons {
+    background-color: #00008B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.8;
+}
+.button-wrapper
+{text-align:center
+}
+
+
+
+/* Darker background on mouse-over */
+.Support .buttons:hover {
+    background-color: red;
+
+}
+.support-wrapper{
+    width:40%;
+    display: inline-block;
+    padding: 60px 300px;
+
+}
+.support-wrapper input,textarea{
+    display: block;
+    padding: 15px 0;
+    margin: 5px 0 21px 0;
+    border: none;
+    background: #f1f1f1;
+    width: 100%;
+    font:400 13.3333px Arial;
+}
+.suport-wrapper label
+{
+    font-weight: bold;
+    font-size :20px;
+    text-align: left;
+    display: block;
+}
+
+.image2
+{
+    max-width: 38px;
+    max-height: 25px;
+}
+
+
