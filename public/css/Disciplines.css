@@ -19,11 +19,6 @@
     margin-bottom: 5px;
 }
 
-.postwrapper {
-    width:33%;
-   float:right;
-}
-
 .disciplinewrapper .discipline-image {
     float: left;
     width: 220px;
@@ -57,6 +52,19 @@
     font-weight: 700;
     margin: 0 0 10px 0;
 }
+.postwrapper
+{ width:30%;
+    float:right;
+    padding: 0 30px 0 0;
+    background: ghostwhite;
+
+}
+.postwrapper h3
+{  font-size:23px;
+    text-align: right;
+    margin:0;
+
+}
 
 .disciplinewrapper .discipline-information .discipline-extra-information .btn {
     background-color: ghostwhite;
@@ -66,6 +74,7 @@
     font-size: 14px;
     opacity: 0.6;
     transition: 0.3s;
+    padding:0;
 }
 .disciplinewrapper .discipline-information .discipline-extra-information .btn:hover {
     opacity: 1;

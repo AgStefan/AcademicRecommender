@@ -1,18 +1,15 @@
 <?php require_once('./../resources/elements/header.php') ?>
 <div class="content-right">
     <div class="disciplineswrapper">
-<!--        <div class="postwrapper">-->
-<!--            <h1> Popular post </h1>-->
-<!--        </div>-->
 
-        <div class="disciplines-list">
+
             <div class="disciplinewrapper">
                 <div class="discipline-image">
                     <img src="./images/web-technologies.png" alt="">
                 </div>
                 <div class="discipline-information">
-                    <h2  class="headerstyle">Discipline:
-                        <span  class="headerstyle">Web Technologies</span></h2>
+                    <h2 >Discipline:
+                        <span >Web Technologies</span></h2>
                     <div class="discipline-extra-information">
                         <button class="btn">Rating: 3.4 </button>
                         <span>/</span>
@@ -20,6 +17,7 @@
                         <span>/</span>
                         <button class="btn">Other info</button>
                     </div>
+
                     <div class="discipline-small-description">
                         Web technologies is a general term referring to the many languages and multimedia packages that are used in conjunction with one another, to produce dynamic web sites such as this one.
                     </div>
@@ -95,7 +93,7 @@
                 </div>
             </div>
 
-        </div>
+
 
         <div class="disciplines-popular">
 
