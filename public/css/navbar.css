@@ -1,4 +1,4 @@
-#navbar-wrapper ul{
+.navbar-wrapper ul{
     background-color: #313541;
     list-style-type: none;
     margin: 0;
@@ -7,7 +7,7 @@
     border: 0px solid #e7e7e7;
 }
 
-#navbar-wrapper li{
+.navbar-wrapper li{
     display: inline-block;
     float: right;
     max-height: 100%;

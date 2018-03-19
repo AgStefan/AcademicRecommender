@@ -8,7 +8,7 @@ class Route {
     public static function set ($routeName, $routeFunction) {
         self::$routes[] = $routeName;
 
-        $url = explode ('/', $_GET['url'])[0];
+        $url = isset($_GET['url']) && $_GET['url'] ? $_GET['url'] : 'home';
 
         if ($url == $routeName) {
             $routeFunction->__invoke();

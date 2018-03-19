@@ -48,6 +48,11 @@ Route::set('tops', function () {
 //    AboutUsController::showDefaultMessage();
     HomeController::view('Tops');
 });
+
+Route::set('matematica', function () {
+//    AboutUsController::showDefaultMessage();
+    HomeController::view('Discipline');
+});
 Route::set('faq', function () {
 
     HomeController::view('faq');

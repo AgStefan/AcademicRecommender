@@ -1,0 +1,108 @@
+.discipline-wrapp .discipline-title-wrapp {
+    text-align: center;
+    color: black;
+}
+
+.discipline-wrapp .discipline-main-image {
+    background: url('./../images/demo-image.png');
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.discipline-wrapp .discipline-menu {
+    display: flex;
+    font-weight: bold;
+}
+
+.discipline-wrapp .discipline-menu .discipline-menu-item {
+    display: inline-block;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.discipline-wrapp .discipline-menu .discipline-menu-item.active {
+    background-color: #f9ea98;
+    border-bottom: 2px solid green;
+}
+
+.discipline-wrapp .discipline-menu .discipline-menu-item:hover {
+    background-color: #f9ea98;
+}
+
+.discipline-wrapp .discipline-tab {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+}
+
+.discipline-wrapp .discipline-tab:first-child {
+    display: block;
+}
+
+
+.discipline-wrapp .discipline-menu-wrapp {
+    padding: 30px;
+}
+
+.discipline-wrapp blockquote {
+    background: lightgoldenrodyellow;
+    padding: 30px;
+}
+
+.discipline-wrapp .comments-write-wrapper {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-bottom: 1px solid #eee;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.discipline-wrapp .comments-write-wrapper .comments-holder {
+    padding: 30px;
+}
+
+
+.discipline-wrapp .comments-write-wrapper .comments-holder textarea {
+    background-color: #fff;
+    border: 2px solid #d2d2d2;
+    box-sizing: border-box;
+    color: #222;
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 2px 2px 5px;
+    vertical-align: top;
+    width: 100%;
+    resize: none;
+}
+
+.discipline-wrapp .comments-write-wrapper .comments-bottom-menu {
+    background: #eaeaea;
+    padding: 5px;
+}
+
+.discipline-wrapp .comments-write-wrapper .comments-bottom-menu .publish-comment-button {
+    background: #4267b2;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.discipline-wrapp .comments-write-wrapper .comments-bottom-menu .reset-comment-button {
+    background: darkgray;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
