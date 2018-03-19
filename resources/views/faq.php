@@ -1,8 +1,10 @@
 <?php require_once('./../resources/elements/header.php') ?>
 
+    <div content-right>
 
-<div right-content>
+
 <div class="faq-wrapper">
+    <div class="faq-image-wrapper">
     <p class="HaveaQ">
        <b style="padding-left: 200px"> Have a Question? </b>
 
@@ -18,6 +20,7 @@
 
 
     </form>
+</div>
     <div class="question">
 
     <h1>How do I sign up?</h1>
@@ -26,5 +29,8 @@
     </div>
 </div>
 </div>
+
+
+
 
 <?php require_once('./../resources/elements/footer.php') ?>
