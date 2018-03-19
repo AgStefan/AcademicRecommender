@@ -11,3 +11,8 @@ body {
 .content-left {
     float: left;
 }
+
+.content-right {
+    padding-top: 100px;
+    overflow: hidden;
+}
