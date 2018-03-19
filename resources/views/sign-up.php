@@ -7,26 +7,26 @@
 <?php require_once('./../resources/elements/navbar.php') ?>
 <div class="container">
 <form>
-    <h1><img class="image2"  src="./images/sign_up_form.jpg"</img>Sign Up</h1>
+    <h1><img class="image2"  src="./images/sign_up_form.jpg" alt="" >Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
-    <img class="image1"  src="./images/username.png"</img>
+    <img class="image1"  src="./images/username.png" alt="">
     <label for="username"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" >
 
-    <img class="image1"  src="./images/email_icon.jpg"</img>
+    <img class="image1"  src="./images/email_icon.jpg" alt="">
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" >
 
-    <img class="image1"  src="./images/password_icon.png"</img>
+    <img class="image1"  src="./images/password_icon.png" alt="">
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password">
 
-    <img class="image1"  src="./images/password_icon.png"</img>
+    <img class="image1"  src="./images/password_icon.png" alt="">
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password">
 
-    <img class="image1"  src="./images/gender_icon.jpg"</img>
+    <img class="image1"  src="./images/gender_icon.jpg" alt="">
     <label  for="gender"><b>Gender</b></label>
 
     <input type="radio" name="gender" id="male">
@@ -45,7 +45,7 @@
 </div>
 </form>
     </div>
-</div>
+
 
 
 

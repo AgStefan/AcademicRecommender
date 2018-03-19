@@ -8,15 +8,15 @@
 <?php require_once('./../resources/elements/navbar.php') ?>
 <div class="container">
 <form>
-    <h1><img class="image2"  src="./images/login_icon.png"</img>Login</h1>
+    <h1><img class="image2"  src="./images/login_icon.png" alt="">Login</h1>
     <p>Please fill in this form to acces your account.</p>
     <hr>
 
-    <img class="image1"  src="./images/email_icon.jpg"</img>
+    <img class="image1"  src="./images/email_icon.jpg" alt="">
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" >
 
-    <img class="image1"  src="./images/password_icon.png"</img>
+    <img class="image1"  src="./images/password_icon.png" alt="">
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password">
 
