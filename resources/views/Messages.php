@@ -5,9 +5,6 @@
         <h1><img class="img" src="./images/message_icon.png"</img>Messages</h1>
         <div class="message-wrapper">
 
-
-            <div class="message-title">
-            </div>
             <div class="message-author">
 
                 <p>Anca Bejinariu</p>

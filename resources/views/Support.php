@@ -9,13 +9,13 @@
         <form class="support-wrapper">
 
 
-            <label for="name"><b>Name</b></label>
+            <label for="name"><img class="image3"  src="./images/name_icon.png"</img><span>Name</span></label>
             <input id="name" type="text" placeholder="Enter name">
 
-            <label for="email"><b>Email</b></label>
+            <label for="email"><img class="image3"  src="./images/email_icon.jpg"</img><span>Email</span></label>
             <input id="email" type="email" placeholder="Enter email">
 
-            <label for="subject"><b>Message</b></label>
+            <label for="subject"><img class="image4"  src="./images/message_icon.png"</img><span>Message</span></label>
             <textarea id="subject" name="subject" placeholder="Write your message" style="height:100px"></textarea>
 
             <div class="button-wrapper">

@@ -1,5 +1,5 @@
 .Support .buttons {
-    background-color: #00008B;
+    background-color: #313541;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -16,20 +16,20 @@
 
 /* Darker background on mouse-over */
 .Support .buttons:hover {
-    background-color: red;
+    background-color: darkgrey;
 
 }
 
-.support-wrapper input,textarea{
+.support-wrapper input {
     display: block;
     padding: 15px 0;
     margin: 5px 0 21px 0;
     border: none;
     background: #f1f1f1;
     width: 100%;
-    font:400 13.3333px Arial;
+    font: 400 13.3333px Arial;
 }
-.suport-wrapper label
+.support-wrapper label
 {
     font-weight: bold;
     font-size :20px;
@@ -37,10 +37,24 @@
     display: block;
 }
 
+
+
 .image
 {
     max-width: 40px;
     max-height: 38px;
+}
+
+.image3{
+    max-width:40px;
+    max-height:20px;
+}
+
+.image4
+{
+    max-width:40px;
+    max-height:20px;
+    margin-bottom:-4px;
 }
 
 .Support
@@ -71,6 +85,18 @@
         width:40%;
         display: block;
     }
+}
+
+.support-wrapper textarea
+{
+    height:100px;
+    display: block;
+    padding: 15px 0;
+    margin: 5px 0 21px 0;
+    border: none;
+    background: #f1f1f1;
+    width: 100%;
+    font: 400 13.3333px Arial;
 }
 
 
