@@ -8,7 +8,7 @@
 
 .message-content button {
     float: right;
-    margin-top: -60px;
+    margin-top: -44px;
     font-weight:bold;
     background-color:midnightblue;
     color:white;
@@ -28,3 +28,12 @@
 {
     font-weight: bold;
 }
+
+.img
+{
+    max-width: 40px;
+    max-height: 46px;
+    margin-bottom:-10px;
+}
+
+

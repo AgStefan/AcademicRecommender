@@ -19,12 +19,7 @@
     background-color: red;
 
 }
-.support-wrapper{
-    width:40%;
-    display: inline-block;
-    padding: 60px 300px;
 
-}
 .support-wrapper input,textarea{
     display: block;
     padding: 15px 0;
@@ -42,10 +37,40 @@
     display: block;
 }
 
-.image2
+.image
 {
-    max-width: 38px;
-    max-height: 25px;
+    max-width: 40px;
+    max-height: 38px;
+}
+
+.Support
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px 300px;
+    width:40%;
+    display:inline-block;
+
+}
+
+@media screen and (max-width: 1300px){
+
+    .Support {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 60px 400px;
+        width:40%;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 870px){
+
+    .Support {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 60px 300px;
+        width:40%;
+        display: block;
+    }
 }
 
 

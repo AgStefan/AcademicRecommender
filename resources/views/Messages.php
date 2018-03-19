@@ -2,7 +2,7 @@
 
 <div class="content-right">
     <div class="messages-wrapper">
-        <h2>Inbox</h2>
+        <h1><img class="img" src="./images/message_icon.png"</img>Messages</h1>
         <div class="message-wrapper">
 
 
