@@ -1,9 +1,4 @@
-body {
 
-    background-repeat: no-repeat;
-    background-size: 100% 40%;
-    display: block;
-}
 
 
 div p.HaveaQ {
@@ -16,7 +11,8 @@ div p.anyQuestion {
     color: #f1f1f1;
     font-size: 30px;
 }
-p {
+
+.faq-wrapper p {
     display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -43,7 +39,7 @@ p {
     width: 45%;
 }
 
- button {
+.faq-wrapper  button {
      background-color: #313541;
      color: white;
      padding: 20px 30px;

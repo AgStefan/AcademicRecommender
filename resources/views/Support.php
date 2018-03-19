@@ -1,7 +1,7 @@
 <?php require_once('./../resources/elements/header.php') ?>
 <div class="content-right">
 
-    <div class="Support">
+    <div class="support">
         <h1><img class="image"  src="./images/download.png"</img>Support</h1>
         <p>In case you need help, please fill in the form.</p>
         <hr>
