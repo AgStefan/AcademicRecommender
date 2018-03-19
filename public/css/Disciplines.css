@@ -11,11 +11,8 @@
     position: relative;
     background-color: ghostwhite;
 }
-.Ratting{
-    margin-left:15px;
-    margin-right: 50px;
-    font-size: 24px;
-}
+
+
 
 .disciplinewrapper p {
     margin-top: 5px;
@@ -51,15 +48,28 @@
     padding: 10px 0;
     color: #999;
     margin-bottom: 10px;
+    font-size:14px;
 }
 
 .disciplinewrapper .discipline-information h2 {
     line-height: 30px;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
 
+.disciplinewrapper .discipline-information .discipline-extra-information .btn {
+    background-color: ghostwhite;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.disciplinewrapper .discipline-information .discipline-extra-information .btn:hover {
+    opacity: 1;
+}
 .disciplinewrapper .discipline-information .discipline-read-more-button-wrapper {
     position: absolute;
     bottom: 0;
