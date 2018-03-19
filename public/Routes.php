@@ -38,12 +38,17 @@ Route::set('support', function () {
 
 Route::set('signup', function () {
 
-    HomeController::view('SignUp');
+    HomeController::view('sign-up');
 });
 Route::set('login', function () {
 
-    HomeController::view('Login');
-});Route::set('tops', function () {
+    HomeController::view('login');
+});
+Route::set('tops', function () {
 //    AboutUsController::showDefaultMessage();
     HomeController::view('Tops');
+});
+Route::set('faq', function () {
+
+    HomeController::view('faq');
 });

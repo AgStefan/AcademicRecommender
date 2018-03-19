@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/css/Disciplines.css"/>
     <link rel="stylesheet" type="text/css" href="/css/Messages.css"/>
     <link rel="stylesheet" type="text/css" href="/css/Support.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/faq.css"/>
 </head>
 
 <body>

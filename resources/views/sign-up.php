@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="/css/general-styles.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/SignUp.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/sign-up.css"/>
 </head>
 <?php require_once('./../resources/elements/navbar.php') ?>
 <div class="container">
