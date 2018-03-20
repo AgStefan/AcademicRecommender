@@ -2,12 +2,12 @@
 
 <div class="content-right">
     <div class="messages-wrapper">
-        <h1><img class="img" src="./images/message_icon.png"</img>Messages</h1>
+        <h1><img class="img"  src="./images/message_icon.png" alt="">Messages</h1>
         <div class="message-wrapper">
 
             <div class="message-author">
 
-                <p><img class="image5" src="./images/alpaca.jpg"</img>John Doe</p>
+                <p><img class="image5" src="./images/alpaca.jpg" alt="">John Doe</p>
 
             </div>
 
@@ -23,7 +23,7 @@
         <div class="message-wrapper">
             <div class="message-author">
 
-                <p><img class="image5" src="./images/dog.jpg"</img>John Doe</p>
+                <p><img class="image5" src="./images/dog.jpg" alt="">John Doe</p>
 
             </div>
 
@@ -37,7 +37,7 @@
         <div class="message-wrapper">
             <div class="message-author">
 
-                <p><img class="image5" src="./images/tattoo.jpg"</img>John Doe</p>
+                <p><img class="image5" src="./images/tattoo.jpg" alt="">John Doe</p>
 
             </div>
 
@@ -51,7 +51,7 @@
         <div class="message-wrapper">
             <div class="message-author">
 
-                <p><img class="image5" src="./images/pink.jpg"</img>John Doe</p>
+                <p><img class="image5" src="./images/pink.jpg" alt="">John Doe</p>
 
             </div>
 
@@ -65,7 +65,7 @@
         <div class="message-wrapper">
             <div class="message-author">
 
-                <p><img class="image5" src="./images/guy.jpg"</img>John Doe</p>
+                <p><img class="image5" src="./images/guy.jpg" alt="">John Doe</p>
 
             </div>
             <div class="message-content">
@@ -77,7 +77,7 @@
         <div class="message-wrapper">
             <div class="message-author">
 
-                <p><img class="image5" src="./images/alpaca.jpg"</img>John Doe</p>
+                <p><img class="image5" src="./images/alpaca.jpg" alt="">John Doe</p>
 
             </div>
             <div class="message-content">

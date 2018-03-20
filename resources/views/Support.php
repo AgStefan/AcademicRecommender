@@ -2,20 +2,20 @@
 <div class="content-right">
 
     <div class="support">
-        <h1><img class="image"  src="./images/download.png"</img>Support</h1>
+        <h1><img class="image"  src="./images/download.png" alt="">Support</h1>
         <p>In case you need help, please fill in the form.</p>
         <hr>
 
         <form class="support-wrapper">
 
 
-            <label for="name"><img class="image3"  src="./images/name_icon.png"</img><span>Name</span></label>
+            <label for="name"><img class="image3"  src="./images/name_icon.png" alt=""><span>Name</span></label>
             <input id="name" type="text" placeholder="Enter name">
 
-            <label for="email"><img class="image3"  src="./images/email_icon.jpg"</img><span>Email</span></label>
+            <label for="email"><img class="image3"  src="./images/email_icon.jpg" alt=""><span>Email</span></label>
             <input id="email" type="email" placeholder="Enter email">
 
-            <label for="subject"><img class="image4"  src="./images/message_icon.png"</img><span>Message</span></label>
+            <label for="subject"><img class="image4"  src="./images/message_icon.png" alt=""><span>Message</span></label>
             <textarea id="subject" name="subject" placeholder="Write your message" style="height:100px"></textarea>
 
             <div class="button-wrapper">
