@@ -50,10 +50,15 @@
 
 
         <div class="comments-write-wrapper">
-            <form action="#" method="POST">
+            <form action="#" method="POST" enctype="multipart/form-data">
                 <div class="comments-holder">
                     <textarea placeholder="Write a comment" name="comment" id="comment-write-holder" cols="30" rows="10"></textarea>
+                    <br><br>
+                    Select image to upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
                 </div>
+
+
 
                 <div class="comments-bottom-menu">
                     <button type="submit" class="publish-comment-button">Publish Comment</button>

@@ -21,7 +21,7 @@
                         Web technologies is a general term referring to the many languages and multimedia packages that are used in conjunction with one another, to produce dynamic web sites such as this one.
                     </div>
                     <div class="discipline-read-more-button-wrapper">
-                        <a href="/discipline/Web Technologies">Read more</a>
+                        <a href="/matematica">Read more</a>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                         Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes.
                     </div>
                     <div class="discipline-read-more-button-wrapper">
-                        <a href="/discipline/matematica">Read more</a>
+                        <a href="matematica">Read more</a>
                     </div>
                 </div>
             </div>
