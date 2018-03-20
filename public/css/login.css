@@ -1,0 +1,86 @@
+.container {
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px 300px;
+}
+
+hr {
+    border: 2px solid #3a5158;
+    margin-bottom: 25px;
+}
+
+.image1{
+    max-width: 22px;
+    max-height: 20px;
+
+}
+
+.image2{
+    max-width: 38px;
+    max-height: 35px;
+
+}
+
+button {
+    background-color: #00008B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity:1;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+.cancelbtn, .siginpbtn {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+
+}
+.gender {
+    width: 100%;
+    margin: 5px 0 22px 0;
+}
+input[type=radio] {
+
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 60px 50px;
+    }
+
+}

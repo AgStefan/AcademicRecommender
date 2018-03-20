@@ -1,0 +1,100 @@
+.support .buttons {
+    background-color: #313541;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.8;
+}
+.button-wrapper
+{text-align:center
+}
+
+
+
+/* Darker background on mouse-over */
+.support .buttons:hover {
+    background-color: darkgrey;
+
+}
+
+.support-wrapper input {
+    display: block;
+    padding: 15px 0;
+    margin: 5px 0 21px 0;
+    border: none;
+    background: #f1f1f1;
+    width: 100%;
+    font: 400 13.3333px Arial;
+}
+.support-wrapper label
+{
+    font-weight: bold;
+    font-size :20px;
+    text-align: left;
+    display: block;
+}
+
+.image
+{
+    max-width: 40px;
+    max-height: 38px;
+}
+
+.image3{
+    max-width:40px;
+    max-height:20px;
+}
+
+.image4
+{
+    max-width:40px;
+    max-height:20px;
+    margin-bottom:-4px;
+}
+
+.Support
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px 300px;
+    width:40%;
+    display:inline-block;
+
+}
+
+@media screen and (max-width: 1300px){
+
+    .support {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 60px 400px;
+        width:40%;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 870px){
+
+    .support {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 60px 300px;
+        width:40%;
+        display: block;
+    }
+}
+
+.support-wrapper textarea
+{
+    height:100px;
+    display: block;
+    padding: 15px 0;
+    margin: 5px 0 21px 0;
+    border: none;
+    background: #f1f1f1;
+    width: 100%;
+    font: 400 13.3333px Arial;
+}
+
+

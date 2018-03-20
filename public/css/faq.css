@@ -1,0 +1,69 @@
+
+
+
+div p.HaveaQ {
+    color: #f1f1f1;
+    font-size: 60px;
+
+}
+
+div p.anyQuestion {
+    color: #f1f1f1;
+    font-size: 30px;
+}
+
+.faq-wrapper p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.faq-wrapper label
+{
+    font-weight: bold;
+    font-size :20px;
+    text-align: left;
+    display: block;
+}
+
+.faq-wrapper input {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 5px 0 21px 0;
+    background: #f1f1f1;
+    font: 400 19.3333px Arial;
+    margin-left: 120px;
+    height: 80%;
+    width: 45%;
+}
+
+.faq-wrapper  button {
+     background-color: #313541;
+     color: white;
+     padding: 20px 30px;
+     margin: 8px 0;
+     cursor: pointer;
+     text-align: center;
+ }
+
+.question {
+    padding-left: 25px;
+    display: inline-block;
+}
+
+.question {
+    margin-bottom: 25px;
+    width:60%;
+    padding:0px;
+    float:left;
+    position: relative;
+    background-color: ghostwhite;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.faq-image-wrapper {
+    background: url('./../images/faq_image.jpg')
+}
