@@ -1,6 +1,9 @@
 
+.account-settings {
+    text-align: center;
+}
 
-.AccountSettings .btn {
+.account-settings .btn {
     background-color: #00008B;
     color: white;
     padding: 14px 20px;
@@ -10,8 +13,9 @@
     text-align: center;
     opacity: 0.8;
 }
-.buttonwrapper
-{text-align:center
+
+.buttonwrapper {
+    text-align: center
 }
 
 hr {
@@ -19,29 +23,30 @@ hr {
     margin-bottom: 25px;
 }
 
-.image1{
+.image1 {
     max-width: 22px;
     max-height: 20px;
-    display:inline-block;
+    display: inline-block;
 }
-.image2{
+
+.image2 {
     max-width: 38px;
     max-height: 35px;
 
 }
-.AccountSettings{
 
-}
 /* Darker background on mouse-over */
-.AccountSettings .btn:hover {
+.account-settings .btn:hover {
     background-color: darkgray;
 
 }
-.wrapper-input{
-    width:40%;
+
+.wrapper-input {
+    width: 40%;
     display: inline-block;
 }
-.wrapper-input input{
+
+.wrapper-input input {
     display: block;
     padding: 15px 0;
     margin: 5px 0 21px 0;
@@ -49,10 +54,10 @@ hr {
     background: #f1f1f1;
     width: 100%;
 }
-.wrapper-input label
-{
+
+.wrapper-input label {
     font-weight: bold;
-    font-size :20px;
+    font-size: 20px;
     text-align: left;
     display: block;
 }

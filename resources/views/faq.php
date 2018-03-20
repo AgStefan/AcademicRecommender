@@ -1,6 +1,6 @@
 <?php require_once('./../resources/elements/header.php') ?>
 
-    <div content-right>
+    <div class="content-right">
 
 
 <div class="faq-wrapper">

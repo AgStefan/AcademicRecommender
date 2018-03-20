@@ -43,11 +43,6 @@
     display: none;
 }
 
-.discipline-wrapp .discipline-tab:first-child {
-    display: block;
-}
-
-
 .discipline-wrapp .discipline-menu-wrapp {
     padding: 30px;
 }

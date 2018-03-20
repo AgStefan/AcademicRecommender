@@ -1,5 +1,10 @@
-
+<!DOCTYPE html>
+<html>
 <head>
+
+    <title>Login</title>
+    <meta charset="UTF-8">
+
     <link rel="stylesheet" type="text/css" href="/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="/css/general-styles.css"/>
     <link rel="stylesheet" type="text/css" href="/css/Login.css"/>
@@ -14,11 +19,11 @@
 
     <img class="image1"  src="./images/email_icon.jpg" alt="">
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" >
+    <input id="email" type="text" placeholder="Enter Email" >
 
     <img class="image1"  src="./images/password_icon.png" alt="">
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password">
+    <input id="psw" type="password" placeholder="Enter Password">
 
     <div>
         <button type="button" class="cancelbtn"> Back</button>
@@ -26,5 +31,6 @@
 </div>
 </form>
     </div>
-</div>
+
 </body>
+</html>

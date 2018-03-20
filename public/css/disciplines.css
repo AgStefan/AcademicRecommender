@@ -1,18 +1,18 @@
 .disciplineswrapper {
     padding-left: 25px;
+    padding-right: 25px;
     display: inline-block;
 }
 
 .disciplinewrapper {
     margin-bottom: 25px;
-    width:60%;
+    width:100%;
     padding:0px;
     float:left;
     position: relative;
     background-color: ghostwhite;
+
 }
-
-
 
 .disciplinewrapper p {
     margin-top: 5px;

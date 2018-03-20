@@ -2,7 +2,7 @@
 
 Route::set('about-us', function () {
 //    AboutUsController::showDefaultMessage();
-    HomeController::view('AboutUs');
+    HomeController::view('about-us');
 });
 
 Route::set('home', function () {
@@ -11,29 +11,21 @@ Route::set('home', function () {
 });
 Route::set('account-settings', function () {
 
-    HomeController::view('AccountSettings');
+    HomeController::view('account-settings');
 });
 Route::set('disciplines', function () {
 
-    HomeController::view('Disciplines');
+    HomeController::view('disciplines');
 });
 
-Route::set('tops', function () {
-
-    HomeController::view('Tops');
-});
 Route::set('messages', function () {
 
-    HomeController::view('Messages');
+    HomeController::view('messages');
 });
 
-Route::set('latest', function () {
-
-    HomeController::view('Latest');
-});
 Route::set('support', function () {
 
-    HomeController::view('Support');
+    HomeController::view('support');
 });
 
 Route::set('signup', function () {
@@ -44,14 +36,10 @@ Route::set('login', function () {
 
     HomeController::view('login');
 });
-Route::set('tops', function () {
-//    AboutUsController::showDefaultMessage();
-    HomeController::view('Tops');
-});
 
 Route::set('matematica', function () {
 //    AboutUsController::showDefaultMessage();
-    HomeController::view('Discipline');
+    HomeController::view('discipline');
 });
 Route::set('faq', function () {
 
