@@ -93,5 +93,5 @@
 
 
     </div>
-</div>
+
     <?php require_once("./../resources/elements/footer.php"); ?>
