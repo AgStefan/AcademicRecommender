@@ -41,7 +41,7 @@ CREATE TABLE messages (
 CREATE TABLES files (
     id INTEGER NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (ID),
-    user_id_sender INTEGER,
+    user_id INTEGER,
     discipline_id INTEGER,
     path VARCHAR(255)
 );
