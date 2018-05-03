@@ -41,7 +41,13 @@ Route::set('matematica', function () {
 //    AboutUsController::showDefaultMessage();
     HomeController::view('discipline');
 });
+
 Route::set('faq', function () {
 
     HomeController::view('faq');
+});
+
+Route::set('seeder', function () {
+
+    BaseModel::seeder();
 });

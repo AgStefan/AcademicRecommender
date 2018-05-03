@@ -2,8 +2,13 @@
 
 class HomeController extends Controller {
 
-    public static function view ($viewName) {
 
-        require_once ('./../resources/views/' . $viewName . '.php');
+    public function __construct() {
+        $user = $this->model('UserModel');
     }
+
+    public function index () {
+
+    }
+
 }
