@@ -35,7 +35,8 @@ CREATE TABLE messages (
     user_id_sender INTEGER,
     user_id_receiver INTEGER,
     subject VARCHAR(255),
-    content TEXT
+    content TEXT,
+    date_time DATETIME
 );
 
 CREATE TABLE files (
@@ -87,3 +88,4 @@ VALUES ( 11, 'Matematica', 1, 'mate.jpg', 'Elemente de algebra, analiza (topolog
 INSERT INTO disciplines
 VALUES ( 12, 'Grafica pe Calculator' ,3, 'grafica.png','.Initiere în domeniul graficii pe calculator. II.Deprinderea abilităţii de a concepe modele (simple) ale unui
 univers (în sensul de mulţime de obiecte având o formă relativ simplă) static sau dinamic. ');
+
