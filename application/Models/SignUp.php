@@ -1,5 +1,13 @@
 <?php
 
-class SignUp extends BaseModel{
+class SignUp extends BaseModel {
+
+
+
+
+    public static function getData() {
+
+    }
+
 
 }

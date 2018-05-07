@@ -2,18 +2,27 @@
 
 
 class BaseModel {
-    protected static $db;
+    public static $db;
 
     function __construct() {
         $this->db = Database::connection();
-        var_dump(1);
     }
 
+
+    /**
+     * Database seeder preparing function
+     *
+     */
     public static function seeder () {
         self::$db = Database::connection();
         self::executeSeeder();
     }
 
+
+    /**
+     * Database seeder execution function
+     *
+     */
     public function executeSeeder () {
 
 

@@ -32,6 +32,12 @@ Route::set('signup', function () {
 
     HomeController::view('sign-up');
 });
+
+Route::set('sign-up-action', function () {
+    AuthController::save();
+});
+
+
 Route::set('login', function () {
 
     HomeController::view('login');

@@ -1,5 +1,7 @@
 DROP TABLE IF EXISTS disciplines;
 DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS roles;
+DROP TABLE IF EXISTS comments;
 DROP TABLE IF EXISTS user_informations;
 DROP TABLE IF EXISTS messages;
 DROP TABLE IF EXISTS files;
@@ -10,6 +12,22 @@ CREATE TABLE users (
     username VARCHAR(255),
     email VARCHAR(255),
     password VARCHAR(255)
+);
+
+CREATE TABLE roles (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (ID),
+    name VARCHAR(255)
+);
+
+CREATE TABLE comments (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (ID),
+    user_id INTEGER,
+    file_id INTEGER,
+    discipline_id INTEGER,
+    subject VARCHAR(255),
+    content TEXT
 );
 
 CREATE TABLE user_informations (
@@ -42,17 +60,15 @@ CREATE TABLE messages (
 CREATE TABLE files (
     id INTEGER NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (ID),
-    user_id INTEGER,
-    discipline_id INTEGER,
     path VARCHAR(255)
 );
 
 INSERT INTO users
-VALUES (111111, 'AgapeStefan', 'stefan.agape97@gmail.com', 'asdqweasd');
+VALUES (1, 'AgapeStefan', 'stefan.agape97@gmail.com', 'asdqweasd');
 INSERT INTO users
-VALUES (222222, 'BejinariuAnca', 'anca.bejinariu@gmail.com', 'qwerty123');
+VALUES (2, 'BejinariuAnca', 'anca.bejinariu@gmail.com', 'qwerty123');
 INSERT INTO users
-VALUES (333333, 'BocsanAndrei', 'bocsan_andrei@yahoo.com', 'andrei01we');
+VALUES (3, 'BocsanAndrei', 'bocsan_andrei@yahoo.com', 'andrei01we');
 
 INSERT INTO user_informations
 VALUES ( 1, 111111, '0722842292', 'Str. Stefan Cel Mare Nr.22' );
