@@ -5,7 +5,7 @@ class BaseModel {
     public static $db;
 
     function __construct() {
-        $this->db = Database::connection();
+        self::$db = Database::connection();
     }
 
 

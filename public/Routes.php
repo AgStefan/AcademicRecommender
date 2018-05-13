@@ -37,6 +37,9 @@ Route::set('sign-up-action', function () {
     AuthController::save();
 });
 
+Route::set('login-action', function (){
+    AuthController::login();
+});
 
 Route::set('login', function () {
 

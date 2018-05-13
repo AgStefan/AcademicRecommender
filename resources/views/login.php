@@ -12,18 +12,18 @@
 <body>
 <?php require_once('./../resources/elements/navbar.php') ?>
 <div class="container">
-<form>
+    <form method="POST" action="/login-action">
     <h1><img class="image2"  src="./images/login_icon.png" alt="">Login</h1>
     <p>Please fill in this form to acces your account.</p>
     <hr>
 
     <img class="image1"  src="./images/email_icon.jpg" alt="">
     <label for="email"><b>Email</b></label>
-    <input id="email" type="text" placeholder="Enter Email" >
+    <input id="email" name="email" type="text" placeholder="Enter Email" >
 
     <img class="image1"  src="./images/password_icon.png" alt="">
     <label for="psw"><b>Password</b></label>
-    <input id="psw" type="password" placeholder="Enter Password">
+    <input id="psw" name="password" type="password" placeholder="Enter Password">
 
     <div>
         <button type="button" class="cancelbtn"> Back</button>
