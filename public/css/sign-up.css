@@ -38,16 +38,16 @@ button:hover {
     opacity:1;
 }
 
-
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
+.msgErr{
+    color: red;
+    font-size: 20px;
 }
 
 
-.cancelbtn, .signupbtn {
-    float: left;
-    width: 50%;
+.signupbtn {
+    margin: auto;
+    display: block;
+    width: 85%;
 }
 
 input[type=text], input[type=password] {

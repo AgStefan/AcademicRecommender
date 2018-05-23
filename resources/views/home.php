@@ -1,4 +1,5 @@
 <?php require_once ("./../resources/elements/header.php"); ?>
+
 <link rel="stylesheet" type="text/css" href="/css/home.css"/>
 <div class="content-right">
     <div>

@@ -16,8 +16,8 @@ class AuthController extends Controller {
             $result = mysqli_query($model::$db, "SELECT * from users where email = '$email'");
 
             if (mysqli_num_rows($result)>=1) {
-                $msg = "Exista deja un cont cu acest email.";
-                echo $msg;
+                header('Location: signup');
+                $_SESSION['Error'] = "Exista deja un cont cu acest email.";
             }
             else {
 
@@ -60,12 +60,22 @@ class AuthController extends Controller {
 
             $row = mysqli_fetch_array($result);
 
-            if (password_verify($password,$row['password'])) {
+            if (mysqli_num_rows($result)<1) {
+                header ('Location: login');
+                $_SESSION['Error'] = "Invalid account.";
+            }
+
+            else
+                if (password_verify($password,$row['password'])){
+                $_SESSION['autentificated'] = 'true';
                 $_SESSION ['id'] = $row['id'];
                 header('Location: home');
-            } else {
-                echo("Cont invalid");
             }
+                else {
+                    header ('Location: login');
+                    $_SESSION['Error'] = "Invalid password.";
+                }
+
         }
 
     }
