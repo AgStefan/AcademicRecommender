@@ -61,8 +61,6 @@ session_start();
 
         <input type="radio" name="gender[]" id="rather-not-say">
         <label for="rather-not-say">Rather not say</label>
-
-
         <div class="clearfix">
 
             <button type="submit" class="signupbtn">Sign Up</button>

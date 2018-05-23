@@ -34,7 +34,7 @@ session_start();
 
     <img class="image1"  src="./images/email_icon.jpg" alt="">
     <label for="email"><b>Email</b></label>
-    <input id="email" name="email" title="Invalid Email" required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" type="text" placeholder="Enter Email" >
+    <input id="email" name="email" title="Invalid Email" required type="text" placeholder="Enter Email" >
 
     <img class="image1"  src="./images/password_icon.png" alt="">
     <label for="psw"><b>Password</b></label>

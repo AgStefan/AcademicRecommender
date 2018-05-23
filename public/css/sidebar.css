@@ -7,6 +7,20 @@
     padding: 100px 0 0 0;
 }
 
+.sidebar-items-container li a.active {
+
+    background-color: #e44c6f;
+    color: white;
+
+}
+
+.sidebar-items-container li:hover:not(.active) {
+
+    color: white;
+    background-color: #e44c6f;
+
+}
+
 .sidebar-items-container .sidebar-item {
 
 }
@@ -20,7 +34,7 @@
 }
 
 .sidebar-items-container  a {
-    padding: 18px 25px;
+    padding: 23px 25px;
     font-weight: bold;
     color: gray;
     text-decoration: none;

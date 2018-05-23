@@ -1,4 +1,6 @@
-<?php require_once('./../resources/elements/header.php') ?>
+<?php
+session_start();
+require_once('./../resources/elements/header.php') ?>
 
 <div class="content-right">
     <h1>About the application</h1>
