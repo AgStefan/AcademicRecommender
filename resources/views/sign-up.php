@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +40,7 @@
 
         <img class="image1" src="./images/email_icon.jpg" alt="">
         <label for="email"><b>Email</b></label>
-        <input id="email" name="email" title="Email incorect" required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" type="text" placeholder="Enter Email">
+        <input id="email" name="email" title="Invalid Email" required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" type="text" placeholder="Enter Email">
 
         <img class="image1" src="./images/password_icon.png" alt="">
         <label for="psw"><b>Password</b></label>
@@ -50,7 +53,7 @@
         <img class="image1" src="./images/gender_icon.jpg" alt="">
         <span><b>Gender</b></span>
 
-        <input type="radio" name="gender[]" id="male">
+        <input type="radio" name="gender[]" id="male" required>
         <label for="male">Male</label>
 
         <input type="radio" name="gender[]" id="female">

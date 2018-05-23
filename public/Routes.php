@@ -5,6 +5,7 @@ Route::set('about-us', function () {
     HomeController::view('about-us');
 });
 
+
 Route::set('home', function () {
 
     HomeController::view('home');
@@ -59,4 +60,9 @@ Route::set('faq', function () {
 Route::set('seeder', function () {
 
     BaseModel::seeder();
+});
+
+Route::set('logout', function () {
+
+    HomeController::view('logout');
 });

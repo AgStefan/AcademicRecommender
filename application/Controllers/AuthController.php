@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 class AuthController extends Controller {
 
 
@@ -11,13 +11,12 @@ class AuthController extends Controller {
         $model = self::model('SignUp');
 
         if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['email'])) {
-
             $email = $_POST['email'];
             $result = mysqli_query($model::$db, "SELECT * from users where email = '$email'");
 
             if (mysqli_num_rows($result)>=1) {
                 header('Location: signup');
-                $_SESSION['Error'] = "Exista deja un cont cu acest email.";
+                $_SESSION['Error'] = "User with this email already exists!";
             }
             else {
 
@@ -41,7 +40,7 @@ class AuthController extends Controller {
      *
      */
     public static function login () {
-        session_start();
+
         $model = self::model('Login');
         if (isset($_POST['email']) && isset($_POST['password'])) {
 
@@ -62,18 +61,21 @@ class AuthController extends Controller {
 
             if (mysqli_num_rows($result)<1) {
                 header ('Location: login');
-                $_SESSION['Error'] = "Invalid account.";
+                $_SESSION['Error'] = "Invalid account!";
             }
 
             else
                 if (password_verify($password,$row['password'])){
-                $_SESSION['autentificated'] = 'true';
-                $_SESSION ['id'] = $row['id'];
+                $_SESSION ['email'] = $row['email'];
+                $_SESSION ['username'] = $row['username'];
+
+                $_SESSION['logged_in'] = 'true';
+
                 header('Location: home');
             }
                 else {
                     header ('Location: login');
-                    $_SESSION['Error'] = "Invalid password.";
+                    $_SESSION['Error'] = "Invalid password!";
                 }
 
         }

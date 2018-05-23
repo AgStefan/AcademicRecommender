@@ -13,12 +13,11 @@ hr {
 .image1{
     max-width: 22px;
     max-height: 20px;
-
 }
 
 .msgErr{
     color: red;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .image2{
@@ -46,7 +45,7 @@ button:hover {
 .signinbtn {
     margin: auto;
     display: block;
-    width: 65%;
+    width: 75%;
 }
 
 input[type=text], input[type=password] {
