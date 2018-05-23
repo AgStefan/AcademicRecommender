@@ -2,6 +2,15 @@
 session_start();
 require_once('./../resources/elements/header.php') ?>
 <div class="content-right">
+
+    <!-- Add/Remove a discipline - only for the admin -->
+    <?php
+    if ($_SESSION['email'] == 'admin' ) {
+        require_once('adminDisciplines.php');
+    }
+    ?>
+
+
     <div class="disciplineswrapper">
 
             <div class="disciplinewrapper">

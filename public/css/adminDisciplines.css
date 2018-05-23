@@ -1,0 +1,46 @@
+.addButton, .RemoveButton{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+
+#addForm, #removeForm{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.addDiscipline label, .removeDiscipline label{
+    display: block;
+    font-weight: bold;
+}
+
+input[type=text] {
+      width: 50%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+}
+
+#buttonAdd{
+    font-size: 25px;
+    float: left;
+    color: #00008B;
+    background-color: cadetblue;
+}
+
+#buttonRemove{
+    font-size: 25px;
+    float: left;
+    color: #00008B;
+    background-color: cadetblue;
+}
+
+#description{
+    width: 50%;
+    background: #f1f1f1;
+    padding: 15px;
+}
+
