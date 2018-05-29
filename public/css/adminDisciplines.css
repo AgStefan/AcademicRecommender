@@ -2,6 +2,8 @@
     margin-left: 5%;
     margin-bottom: 2%;
     font-size: 25px;
+    width: 20%;
+    padding: 5px;
 }
 
 #addForm, #removeForm{

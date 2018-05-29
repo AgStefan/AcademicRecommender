@@ -31,11 +31,12 @@
                         if (!$conn) {
                             die("Connection failed: " . mysqli_connect_error());
                         }
-                        //$sql =  $conn->prepare("INSERT INTO disciplines (nume, an, description)VALUES (?, ?, ?)");
-                        //$sql->bind_param('sss', $name, $year,$description);
-                        //$sql->execute();
+                        $sql =  $conn->prepare("INSERT INTO disciplines (nume, an, description)VALUES (?, ?, ?)");
+                        $sql->bind_param('sss', $name, $year,$description);
+                        $sql->execute();
 
-                         $sql = "INSERT INTO disciplines (nume, an, description)VALUES ('$name', '$year','$description')";
+                         //$sql = "INSERT INTO disciplines (nume, an, description)VALUES ('$name', '$year','$description')";
+                        $sql->close();
 
                         if (mysqli_query($conn, $sql)) {
                             $verify = 1;
@@ -43,7 +44,8 @@
                             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                         }
                     }
-                    $conn->close();
+                    //die();
+                    //$conn->close();
                 }
 
                 ?>
@@ -51,12 +53,7 @@
         </form>
         </div>
 
-<?php
-if ($verify == 1)
-{
-    echo "New record created successfully";
-}
-?>
+
 
 
         <div class="removeDiscipline">
@@ -87,14 +84,16 @@ if ($verify == 1)
                 die("Connection failed: " . mysqli_connect_error());
             }
 
-            $sql = "DELETE FROM disciplines WHERE nume = '$name' and an = '$year'";
+            $sql = $conn->prepare( "DELETE FROM disciplines WHERE nume = '$name' and an = '$year'");
+            $sql->execute();
+            $sql->close();
 
             if (mysqli_query($conn, $sql)) {
                 $verify2 = 1;
             } else {
                 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
             }
-            mysqli_close($conn);
+            //mysqli_close($conn);
         }
     }
     ?>
