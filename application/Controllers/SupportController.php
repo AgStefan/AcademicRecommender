@@ -20,10 +20,16 @@ class SupportController extends Controller
             $email = self::sanitizeInput($_POST['email']);
             $message = self:: sanitizeInput($_POST['subject']);
 
+            echo '<div id="form-submit-alert">Your message has been sent!</div>';
+
+            header( "refresh:3;url=support");
+
 
             $stmt->bind_param('sss', $name, $email, $subject);
             $stmt->execute();
             $stmt->close();
+
+
         }
     }
 }
