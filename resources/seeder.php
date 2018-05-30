@@ -5,6 +5,13 @@ DROP TABLE IF EXISTS comments;
 DROP TABLE IF EXISTS user_informations;
 DROP TABLE IF EXISTS messages;
 DROP TABLE IF EXISTS files;
+DROP TABLE IF EXISTS support;
+
+CREATE TABLE support (
+    name VARCHAR(255),
+    email VARCHAR(255),
+    subject VARCHAR(255)
+);
 
 CREATE TABLE users (
     id INTEGER NOT NULL AUTO_INCREMENT,
