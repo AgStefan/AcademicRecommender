@@ -1,9 +1,25 @@
 <?php
 
-Route::set('about-us', function () {
+Route::set('discipline/{discipline_slug}', 'DisciplineController@render');
+
+Route::set('upload-comment', 'DisciplineController@uploadComment');
+
+
+
+Route::set('/about-us', function () {
 //    AboutUsController::showDefaultMessage();
     HomeController::view('about-us');
 });
+
+
+
+//Route::set('/discipline/{discipline_slug}', function ($asdf) {
+//    var_dump($asdf);die;
+////    AboutUsController::showDefaultMessage();
+//    DisciplineController::view('discipline');
+//});
+
+
 
 
 Route::set('home', function () {
@@ -51,15 +67,13 @@ Route::set('login', function () {
     HomeController::view('login');
 });
 
-Route::set('matematica', function () {
-//    AboutUsController::showDefaultMessage();
-    HomeController::view('discipline');
-});
+
 
 Route::set('faq', function () {
 
     HomeController::view('faq');
 });
+
 
 Route::set('seeder', function () {
 

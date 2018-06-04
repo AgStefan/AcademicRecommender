@@ -1,6 +1,6 @@
 <?php
 
-class login extends BaseModel{
+class Login extends BaseModel{
 
     public static function getData() {
 

@@ -7,7 +7,12 @@ class Controller {
      *
      * @param $viewName
      */
-    public static function view ($viewName) {
+    public static function view ($viewName, $data = []) {
+
+        $arrayKey = array_keys($data)[0];
+        $arrayValue = array_values($data)[0];
+        $$arrayKey = $arrayValue;
+
         require_once ('./../resources/views/' . $viewName . '.php');
     }
 

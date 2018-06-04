@@ -49,6 +49,7 @@ CREATE TABLE disciplines (
     id INTEGER NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (ID),
     nume VARCHAR(255),
+    slug VARCHAR(255),
     an INTEGER,
     image VARCHAR(255),
     description TEXT
@@ -67,7 +68,7 @@ CREATE TABLE messages (
 CREATE TABLE files (
     id INTEGER NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (ID),
-    path VARCHAR(255)
+    name VARCHAR(255)
 );
 
 INSERT INTO users
