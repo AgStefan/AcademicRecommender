@@ -28,7 +28,7 @@ if (isset($_SESSION['Error'])){
 
     <form style="display:none;"  id="addForm" method="POST" action="/addDisciplines-action">
         <label for="name"><span>Name of the discipline:</span></label>
-        <input id="name" name="name" type="text" title="Name must not be blank and contain only letters, numbers and underscores." required pattern="\w+" placeholder="Enter the name of the discipline">
+        <input id="name" name="name" type="text"  required placeholder="Enter the name of the discipline">
 
         <label for="year"><span>Year of the discipline:</span></label>
         <input id="year" name="year" type="text" title="Year must be a number between 1 and 6" required pattern="[1-9]" placeholder="Enter the year of the discipline">
@@ -49,10 +49,10 @@ if (isset($_SESSION['Error'])){
 
     <form style="display:none;" id="removeForm" method="POST" action="/removeDisciplines-action">
         <label for="name"><span>Name of the discipline</span></label>
-        <input id="name" name="name" title="Name must not be blank and contain only letters, numbers and underscores." required pattern="\w+" type="text" placeholder="Enter the name of the discipline">
+        <input id="name" name="name" required type="text" placeholder="Enter the name of the discipline">
 
         <label for="name"><span>Year of the discipline</span></label>
-        <input id="year" name="year" title="Year must be a number between 1 and 6" required pattern="[1-9]" type="text" placeholder="Enter the year of the discipline">
+        <input id="year" name="year" required type="text" placeholder="Enter the year of the discipline">
 
         <div class="button-wrapper">
             <input onclick="MessageRemove()" type="submit" id="buttonRemove" name="buttonRemove" value="REMOVE" />

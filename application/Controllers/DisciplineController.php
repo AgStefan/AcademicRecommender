@@ -27,6 +27,7 @@ class DisciplineController extends Controller
         $comment = $_POST['comment'];
 
         $target_dir = "uploads/";
+        $fileName = time() . basename($_FILES["fileToUpload"]["name"]);
         $target_file = $target_dir . time() . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -49,9 +50,11 @@ class DisciplineController extends Controller
 
                 $model = self::model('File');
 
+                $stmt = $model::$db->prepare("INSERT into files (name) VALUES (?)");
 
-                $stmt = $model::$db->prepare("INSERT into files (nume) VALUES (?)");
-
+                $stmt->bind_param('s', $fileName);
+                $stmt->execute();
+                $stmt->close();
 
             } else {
                 echo "Sorry, there was an error uploading your file.";
@@ -59,24 +62,34 @@ class DisciplineController extends Controller
         }
 
 
-//        $model = self::model('Discipline');
-//
-//
-//        if (isset($comment) && $comment) {
-//
-//            $stmt = $model::$db->prepare("INSERT into comments (user_id, file_id, discipline_id, subject, comment ) VALUES (?, ?, ?, ?, ?)");
-//
-//            $username = self::sanitizeInput($_POST['username']);
-//            $email = self::sanitizeInput($_POST['email']);
-//
-//
-//            $stmt->bind_param('sss', $userId, $fileId, $disciplineId, $email, $comment);
-//            $stmt->execute();
-//            $stmt->close();
-//
-//            header('Location: login');
-//            die();
-//        }
+        $model = self::model('Discipline');
+
+
+        if (isset($comment) && $comment) {
+//            var_dump();die;
+            $stmt = $model::$db->prepare("INSERT into comments (user_id, file_id, discipline_id, subject, comment ) VALUES (?, ?, ?, ?, ?)");
+
+            $currentUserEmail = $_SESSION['email'];
+
+            $stmt = $model::$db->prepare("SELECT id from users WHERE email = ? ");
+            $stmt->bind_param("s", $currentUserEmail);
+            $stmt->execute();
+            $stmt->bind_result($userId);
+            $stmt->fetch();
+            $stmt->close();
+            die();
+
+            $username = self::sanitizeInput($_POST['username']);
+            $email = self::sanitizeInput($_POST['email']);
+
+
+            $stmt->bind_param('sss', $userId, $fileId, $disciplineId, $email, $comment);
+            $stmt->execute();
+            $stmt->close();
+
+            header('Location: login');
+
+        }
 
     }
 

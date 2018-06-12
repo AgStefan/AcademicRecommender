@@ -11,6 +11,8 @@ class  AdminDisciplinesController extends Controller
         if (isset($_POST['name']) && isset($_POST['year']) && isset($_POST['description'])) {
 
             $name = $_POST['name'];
+            $slug = slugify($_POST['name']);
+
             $year = $_POST['year'];
             $description = $_POST['description'];
 
@@ -33,8 +35,8 @@ class  AdminDisciplinesController extends Controller
 
                 } else {
 
-                    $stmt = $model::$db->prepare("INSERT INTO disciplines (nume, an, description)VALUES (?, ?, ?)");
-                    $stmt->bind_param('sss', $name, $year, $description);
+                    $stmt = $model::$db->prepare("INSERT INTO disciplines (nume, an, description, slug)VALUES (?, ?, ?, ?)");
+                    $stmt->bind_param('ssss', $name, $year, $description, $slug);
                     $stmt->execute();
                     if ($stmt) {
                         $_SESSION['msg'] = "Discipline " . $name . " added successfully!";

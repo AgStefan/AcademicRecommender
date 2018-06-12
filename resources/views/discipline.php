@@ -5,7 +5,7 @@
     <div class="discipline-wrapp">
 
         <div class="discipline-title-wrapp">
-            <h1><?= $discipline->nume ?></h1>
+            <h1><?= $discipline ? $discipline->nume  : '' ?></h1>
         </div>
 
         <div class="discipline-menu-wrapp">
