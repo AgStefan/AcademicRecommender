@@ -9,8 +9,8 @@ class Controller {
      */
     public static function view ($viewName, $data = []) {
 
-        $arrayKey = array_keys($data)[0];
-        $arrayValue = array_values($data)[0];
+        $arrayKey = !empty($data) && $data ? array_keys($data)[0] : null;
+        $arrayValue = !empty($data) && $data ? array_values($data)[0] : null;
         $$arrayKey = $arrayValue;
 
         require_once ('./../resources/views/' . $viewName . '.php');
