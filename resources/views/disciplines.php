@@ -1,11 +1,11 @@
 <?php
-session_start();
+
 require_once('./../resources/elements/header.php') ?>
 <div class="content-right">
 
     <!-- Add/Remove a discipline - only for the admin -->
     <?php
-    if ($_SESSION['email'] == 'admin' ) {
+    if ($_SESSION['role'] == '2' ) {
         require_once('adminDisciplines.php');
     }
     ?>
