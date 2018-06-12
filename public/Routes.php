@@ -40,6 +40,10 @@ Route::set('messages', function () {
     HomeController::view('messages');
 });
 
+Route::set('message-action', function() {
+    MessageController::message();
+});
+
 Route::set('support', function () {
 
     HomeController::view('support');
