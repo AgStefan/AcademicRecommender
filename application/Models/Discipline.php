@@ -2,7 +2,7 @@
 
 class Discipline extends  BaseModel {
 
-    public function all() {
+    public function getAllDisciplines() {
 
         $stmt = $this::$db->prepare("SELECT * from disciplines");
         $stmt->execute();
@@ -13,7 +13,7 @@ class Discipline extends  BaseModel {
             $objectArray[] = $row;
         }
 
-        return $objectArray;
+        return isset($objectArray) && $objectArray ? $objectArray : null;
     }
 
     public function getDisciplineBySlug($slug) {

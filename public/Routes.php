@@ -30,10 +30,7 @@ Route::set('account-settings', function () {
 
     HomeController::view('account-settings');
 });
-Route::set('disciplines', function () {
-
-    HomeController::view('disciplines');
-});
+Route::set('disciplines', 'DisciplinesController@render');
 
 Route::set('messages', function () {
 
