@@ -72,8 +72,6 @@ CREATE TABLE files (
     name VARCHAR(255)
 );
 
-INSERT INTO roles
-VALUES ( 1, 'member' );
-INSERT INTO roles
-VALUES ( 2, 'admin' );
+INSERT INTO roles VALUES ( 1, 'member' );
+INSERT INTO roles VALUES ( 2, 'admin' );
 

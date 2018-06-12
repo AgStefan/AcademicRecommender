@@ -37,7 +37,7 @@ class DisciplineController extends Controller
             $uploadOk = 0;
         }
 
-        if ($imageFileType != "txt" && $imageFileType != "pdf") {
+            if ($imageFileType != "txt" && $imageFileType != "pdf") {
             echo "Sorry, only TXT and PDF files are allowed.";
             $uploadOk = 0;
         }

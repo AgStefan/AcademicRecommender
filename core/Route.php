@@ -20,7 +20,12 @@ class Route
 
         $urlArray = isset($_GET['url']) && $_GET['url'] ? explode('/', $_GET['url']) : null;
 
-        $parameter = isset($urlArray[1]) && $urlArray[1] ? $urlArray[1] : '';
+        $parameter = isset($urlArray) && $urlArray[1] ? $urlArray[1] : '';
+
+
+
+
+
 
         $url = isset($urlArray) && $urlArray[0] ? $urlArray[0] : 'home';
 
