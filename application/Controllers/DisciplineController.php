@@ -54,6 +54,9 @@ class DisciplineController extends Controller
 
                 $stmt->bind_param('s', $fileName);
                 $stmt->execute();
+
+                $fileId = $stmt->insert_id;
+
                 $stmt->close();
 
             } else {
@@ -62,32 +65,34 @@ class DisciplineController extends Controller
         }
 
 
-        $model = self::model('Discipline');
+
 
 
         if (isset($comment) && $comment) {
-//            var_dump();die;
-            $stmt = $model::$db->prepare("INSERT into comments (user_id, file_id, discipline_id, subject, comment ) VALUES (?, ?, ?, ?, ?)");
 
             $currentUserEmail = $_SESSION['email'];
-
             $stmt = $model::$db->prepare("SELECT id from users WHERE email = ? ");
             $stmt->bind_param("s", $currentUserEmail);
             $stmt->execute();
             $stmt->bind_result($userId);
             $stmt->fetch();
             $stmt->close();
-            die();
-
-            $username = self::sanitizeInput($_POST['username']);
-            $email = self::sanitizeInput($_POST['email']);
 
 
-            $stmt->bind_param('sss', $userId, $fileId, $disciplineId, $email, $comment);
+            $model = self::model('Discipline');
+            $stmt = $model::$db->prepare("INSERT into comments (user_id, file_id, discipline_id, subject, content ) VALUES (?, ?, ?, ?, ?) ");
+
+
+            $disciplineId = (int) $_POST['discipline_id'];
+            $subject = self::sanitizeInput($_POST['subject']);
+
+
+
+            $stmt->bind_param('iiiss', $userId, $fileId, $disciplineId, $subject, $comment);
             $stmt->execute();
             $stmt->close();
 
-            header('Location: login');
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
 
         }
 

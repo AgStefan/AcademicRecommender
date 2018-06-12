@@ -8,6 +8,7 @@
             <h1><?= $discipline ? $discipline->nume  : '' ?></h1>
         </div>
 
+
         <div class="discipline-menu-wrapp">
             <div class="discipline-menu">
                 <div onclick="openTab(event, 'discipline-info-tab')" class="active discipline-menu-item discipline-menu-information">Discipline Information</div>
@@ -51,7 +52,7 @@
 
         <div class="comments-write-wrapper">
             <form action="/upload-comment" method="POST" enctype="multipart/form-data">
-
+                <input type="hidden" name="discipline_id" value="<?= $discipline->id ?>">
 
                 <div class="comments-holder">
                     <input type="text" name="subject" id="subject" placeholder="Write a subject">
