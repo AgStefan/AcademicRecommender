@@ -46,3 +46,13 @@ input[type=text] {
     padding: 15px;
 }
 
+.message{
+    color: #191970;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.checkedImage{
+    width: 2%;
+}
+

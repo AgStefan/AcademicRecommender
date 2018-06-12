@@ -84,3 +84,14 @@ Route::set('logout', function () {
 
     HomeController::view('logout');
 });
+
+Route::set('addDisciplines-action', function(){
+
+    AdminDisciplinesController::addDiscipline('disciplines');
+});
+
+Route::set('removeDisciplines-action', function(){
+
+    AdminDisciplinesController::removeDiscipline('disciplines');
+});
+
