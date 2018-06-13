@@ -1,10 +1,15 @@
 <?php
 
-class HomeController extends Controller {
+class HomeController extends Controller
+{
 
 
-    public static function view ($viewName) {
+    public function __construct()
+    {
+        $user = $this->model('UserModel');
+    }
 
-        require_once ('../resources/views/' . $viewName . '.php');
+    public function index()
+    {
     }
 }

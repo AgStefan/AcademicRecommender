@@ -36,7 +36,7 @@ require_once('./../resources/elements/header.php') ?>
 
         </form>
     <p class="Questions">
-        <b style="padding-left: 80px"> Most common questions: </b>
+        <b > Most common questions: </b>
 
     </p>
 

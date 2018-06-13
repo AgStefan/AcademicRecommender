@@ -7,6 +7,11 @@
     border: 0px solid #e7e7e7;
 }
 
+.navbar-wrapper{
+    display: inline-block;
+    width: 100%;
+}
+
 .navbar-wrapper li{
     display: inline-block;
     float: right;

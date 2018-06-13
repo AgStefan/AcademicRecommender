@@ -63,7 +63,7 @@ div p.anyQuestion {
 
 }
 
-.faq-wrapper {
+.content {
     background: url('./../images/faq_image.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -99,7 +99,9 @@ div p.anyQuestion {
 }
 
 .Questions{
-
+    color: #f1f1f1;
+    font-size: 56px;
+    padding-left: 20px;
 }
 
 .content{
