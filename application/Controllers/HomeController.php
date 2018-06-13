@@ -3,12 +3,8 @@
 class HomeController extends Controller {
 
 
-    public function __construct() {
-        $user = $this->model('UserModel');
+    public static function view ($viewName) {
+
+        require_once ('../resources/views/' . $viewName . '.php');
     }
-
-    public function index () {
-
-    }
-
 }
