@@ -43,9 +43,22 @@ require_once('./../resources/elements/header.php') ?>
 
         <?php foreach ($questions as $question): ?>
     <div class="faq_holder">
+        <?php
+        if (isset($_SESSION) && isset($_SESSION['role']) && $_SESSION['role'] == '2' ){
 
+            ?>
+            <form method="POST" action="removeQuestion-action">
+             <div class="button-wrapper">
+            <input type="submit" id="buttonRemove" name="buttonRemove" value="Delete Question" />
+        </div>
+
+            </form>
+            <?php
+        }
+        ?>
     <img class="QuestionIcon" src="./images/QuestionIcon.png" alt="">
         <p><b> Q: </b> <?= $question->question ?></p>
+
         <p><b> A: </b> <?= $question->answer ?></p>
 
 
