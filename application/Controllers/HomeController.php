@@ -1,14 +1,15 @@
 <?php
 
-class HomeController extends Controller {
+class HomeController extends Controller
+{
 
 
-    public function __construct() {
+    public function __construct()
+    {
         $user = $this->model('UserModel');
     }
 
-    public function index () {
-
+    public function index()
+    {
     }
-
 }

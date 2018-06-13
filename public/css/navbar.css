@@ -1,10 +1,15 @@
 .navbar-wrapper ul{
-    background-color: #313541;
+    background-color: #191970;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     border: 0px solid #e7e7e7;
+}
+
+.navbar-wrapper{
+    display: inline-block;
+    width: 100%;
 }
 
 .navbar-wrapper li{
@@ -31,7 +36,8 @@
 }
 
 .navbar-wrapper li a.active {
-    color: 	#0000CD;
+
+    background-color: #e44c6f;
 
 }
 
@@ -42,13 +48,9 @@
 
 }
 
-.navbar-wrapper ul li.current {
-    background-color: #e44c6f;
-}
-
 .navbar-wrapper ul li img {
-     max-width: 22px;
-     max-height: 30px;
+     max-width: 25px;
+     max-height: 33px;
      position: absolute;
      top: 20px;
      left: 15px;

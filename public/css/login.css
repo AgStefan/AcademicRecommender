@@ -13,7 +13,11 @@ hr {
 .image1{
     max-width: 22px;
     max-height: 20px;
+}
 
+.msgErr{
+    color: red;
+    font-size: 30px;
 }
 
 .image2{
@@ -38,16 +42,10 @@ button:hover {
 }
 
 
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
-
-.cancelbtn, .siginpbtn {
-    float: left;
-    width: 48%;
-    margin-right: 4%;
+.signinbtn {
+    margin: auto;
+    display: block;
+    width: 75%;
 }
 
 input[type=text], input[type=password] {

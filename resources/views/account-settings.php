@@ -1,4 +1,6 @@
-<?php require_once('./../resources/elements/header.php') ?>
+<?php
+
+require_once('./../resources/elements/header.php') ?>
 <div class="content-right">
     <div class="account-settings">
 

@@ -50,15 +50,10 @@
 
 
         <div class="comments-write-wrapper">
-            <form action="#" method="POST" enctype="multipart/form-data">
+            <form action="#" method="POST">
                 <div class="comments-holder">
                     <textarea placeholder="Write a comment" name="comment" id="comment-write-holder" cols="30" rows="10"></textarea>
-                    <br><br>
-                    Select image to upload:
-                    <input type="file" name="fileToUpload" id="fileToUpload">
                 </div>
-
-
 
                 <div class="comments-bottom-menu">
                     <button type="submit" class="publish-comment-button">Publish Comment</button>
@@ -70,6 +65,23 @@
         </div>
 
         <div class="user-comments-holder">
+            <?php if ($disciplineComments): ?>
+                <?php foreach($disciplineComments as $disciplineComment): ?>
+
+                    <div class="container">
+                        <div class="dialogbox">
+                            <div class="body">
+                                <div class="message">
+                                    <p><?= $disciplineComment->content ?></p>
+                                    <hr>
+                                    <p><?= $disciplineComment->content ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php endforeach; ?>
+            <?php endif; ?>
 
         </div>
 
