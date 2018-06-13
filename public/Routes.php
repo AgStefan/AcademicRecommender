@@ -88,9 +88,14 @@ Route::set('addQuestion-action', function(){
     FaqController::addQuestion('faq');
 });
 
-Route::set('faq', function(){
+Route::set('removeQuestion-action', function(){
 
     FaqController::removeQuestion('faq');
 });
 
 Route::set('faq', 'FaqController@render');
+
+Route::set('addAnswer-action', function(){
+
+    FaqController::addAnswer('faq');
+});
