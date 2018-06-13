@@ -3,23 +3,12 @@
 Route::set('discipline/{discipline_slug}', 'DisciplineController@render');
 
 Route::set('upload-comment', 'DisciplineController@uploadComment');
-
+Route::set('download-file/{file_id}', 'DisciplineController@downloadFile');
 
 
 Route::set('/about-us', function () {
-//    AboutUsController::showDefaultMessage();
     HomeController::view('about-us');
 });
-
-
-
-//Route::set('/discipline/{discipline_slug}', function ($asdf) {
-//    var_dump($asdf);die;
-////    AboutUsController::showDefaultMessage();
-//    DisciplineController::view('discipline');
-//});
-
-
 
 
 Route::set('home', function () {
@@ -82,10 +71,7 @@ Route::set('seeder', function () {
     BaseModel::seeder();
 });
 
-Route::set('logout', function () {
-
-    HomeController::view('logout');
-});
+Route::set('logout', 'AuthController@logout');
 
 Route::set('addDisciplines-action', function(){
 

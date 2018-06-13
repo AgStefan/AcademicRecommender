@@ -5,7 +5,7 @@
     <div class="discipline-wrapp">
 
         <div class="discipline-title-wrapp">
-            <h1>Titlu Disciplina</h1>
+            <h1><?= $discipline ? $discipline->nume : '' ?></h1>
         </div>
 
         <div class="discipline-menu-wrapp">
@@ -18,41 +18,53 @@
 
 
             <div id="discipline-info-tab" class="discipline-tab tab-content">
-                <p>Anul: <span>2</span></p>
-                <p>Profesori: <span>Profesor1, Profesor 2</span></p>
-                <p>Numar comentarii: <span>421</span></p>
-                <p>Other <span>...</span></p>
+                <p>Anul: <span><?= $discipline ? $discipline->an : '' ?></span></p>
+                <p>Profesori: <span></span></p>
+                <p>Numar comentarii: <span><?= isset($disciplineComments) ? count($disciplineComments) : '0' ?></span></p>
             </div>
 
             <div id="discipline-persons-tab" class="discipline-tab tab-content">
-                <h2>Nume student 1</h2>
+                <h2><?= $personOfInterest ? $personOfInterest->username : '' ?></h2>
 
                 <blockquote>
-                    <p>Email: <span>exemplu@exemplu.exemplu</span></p>
-                    <p>Nr telefon: <span>01846861</span></p>
+                    <p>Email: <span><?= $personOfInterest ? $personOfInterest->email : '' ?></span></p>
                 </blockquote>
             </div>
 
             <div id="discipline-materials-tab" class="discipline-tab tab-content">
 
+                <?php foreach ($disciplineFiles as $disciplineFile): ?>
+                    <p><a href="/download-file/<?= $disciplineFile->id ?>"><?= $disciplineFile->name ?></a></p>
+                <?php endforeach; ?>
 
 
             </div>
 
             <div id="discipline-comments-tab" class="discipline-tab tab-content">
-                <h3>Comment 1</h3>
+                <h3><?= $recommendedComment ? $recommendedComment->subject : '' ?></h3>
 
                 <blockquote>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis ducimus iusto maxime necessitatibus nisi nobis saepe. Ab alias, aspernatur cum eius explicabo modi neque nisi quasi, quidem saepe, voluptatum.
+                    <?= $recommendedComment ? $recommendedComment->content : '' ?>
                 </blockquote>
             </div>
         </div>
 
 
+        <?php if (isset($_SESSION) && isset($_SESSION['role'])): ?>
         <div class="comments-write-wrapper">
-            <form action="#" method="POST">
+            <form action="/upload-comment" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="discipline_id" value="<?= $discipline->id ?>">
+
                 <div class="comments-holder">
+                    <input type="text" name="subject" id="subject" placeholder="Write a subject">
                     <textarea placeholder="Write a comment" name="comment" id="comment-write-holder" cols="30" rows="10"></textarea>
+                </div>
+
+
+
+                <div class="file-upload">
+                    Select file to upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
                 </div>
 
                 <div class="comments-bottom-menu">
@@ -64,6 +76,9 @@
 
         </div>
 
+
+        <?php endif; ?>
+
         <div class="user-comments-holder">
             <?php if ($disciplineComments): ?>
                 <?php foreach($disciplineComments as $disciplineComment): ?>
@@ -72,9 +87,15 @@
                         <div class="dialogbox">
                             <div class="body">
                                 <div class="message">
+                                    <p style="color: green;"><?= $disciplineComment->subject ?></p>
                                     <p><?= $disciplineComment->content ?></p>
-                                    <hr>
-                                    <p><?= $disciplineComment->content ?></p>
+
+                                    <?php if ($disciplineComment->file_id): ?>
+
+                                        <hr>
+                                        <p><a href="/download-file/<?= $disciplineComment->file_id ?>"><?= $disciplineComment->file_name ?></a></p>
+
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>

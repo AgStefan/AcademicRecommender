@@ -67,4 +67,40 @@ require_once('./../resources/elements/header.php') ?>
 
 </div>
 
+    <script>
+        function checkUsername () {
+            var status = document.getElementById("usernamestatus");
+            var u = document.getElementById("username").value;
+            if(u != "")
+            {
+                status.innerHTML = 'Se verifica...';
+                var hr = new XMLHttpRequest();
+                hr.open("POST","/register-check",true);
+                hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+                hr.onreadystatechange = function(){
+                    console.log(hr.responseText);
+                    if (hr.readyState == 4){
+                        status.innerHTML = hr.responseText;
+                        if (hr.status == 200) {
+                            document.getElementById('submit').className = "btn btn-primary";
+                        } else {
+                            document.getElementById('submit').className = "btn btn-primary disabled" ;
+
+                        }
+                    }
+                }
+
+
+                var v = "username="+u;
+                hr.send(v);
+
+
+
+            }
+
+        }
+
+    </script>
+
 <?php require_once('./../resources/elements/footer.php') ?>

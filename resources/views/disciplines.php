@@ -6,9 +6,7 @@ require_once('./../resources/elements/header.php') ?>
     <!-- Add/Remove a discipline - only for the admin -->
     <?php
 
-    $_SESSION['role'] = 2;
-
-    if (isset($_SESSION) && isset($_SESSION['role']) && $_SESSION['role'] == '2' ) {
+    if (getCurrentUserRole() && getCurrentUserRole() === 2 ) {
         require_once('adminDisciplines.php');
     }
 
@@ -18,7 +16,7 @@ require_once('./../resources/elements/header.php') ?>
 
 
     <div class="disciplineswrapper">
-
+        <?php if ($disciplines): ?>
         <?php foreach ($disciplines as $discipline): ?>
             <div class="disciplinewrapper">
                 <div class="discipline-image">
@@ -47,7 +45,7 @@ require_once('./../resources/elements/header.php') ?>
             </div>
 
         <?php endforeach; ?>
-
+<?php endif; ?>
         <div class="disciplines-popular">
 
         </div>
