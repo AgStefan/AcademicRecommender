@@ -41,6 +41,8 @@ Route::set('message-action', function() {
     MessageController::message();
 });
 
+Route::set('messages', 'MessageController@render');
+
 Route::set('support', function () {
 
     HomeController::view('support');

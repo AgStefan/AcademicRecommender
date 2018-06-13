@@ -36,5 +36,14 @@ class MessageController extends Controller
 
         }
     }
+
+
+    public function render() {
+
+        $messages = $this->model('Message')->getAllMessages();
+
+        return $this->view('messages', ['messages' => $messages]);
+
+    }
 }
 //
