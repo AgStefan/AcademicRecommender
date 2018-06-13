@@ -7,11 +7,11 @@ class Controller {
      *
      * @param $viewName
      */
-    public static function view ($viewName, $data = []) {
+    public static function view ($viewName, $datum = []) {
 
-        $arrayKey = !empty($data) && $data ? array_keys($data)[0] : null;
-        $arrayValue = !empty($data) && $data ? array_values($data)[0] : null;
-        $$arrayKey = $arrayValue;
+        foreach ($datum as $arrayKey => $data ) {
+            $$arrayKey = $data;
+        }
 
         require_once ('./../resources/views/' . $viewName . '.php');
     }

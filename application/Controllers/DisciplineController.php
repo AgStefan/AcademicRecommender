@@ -12,8 +12,10 @@ class DisciplineController extends Controller
     {
 
         $discipline = $this->model('Discipline')->getDisciplineBySlug($disciplineSlug);
+        $disciplineComments = $this->model('Comment')->getDisciplineComments($discipline->id);
 
-        return $this->view('discipline', ['discipline' => $discipline]);
+
+        return $this->view('discipline', ['discipline' => $discipline, 'disciplineComments' => $disciplineComments]);
     }
 
 
@@ -32,13 +34,13 @@ class DisciplineController extends Controller
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-        if ($_FILES["fileToUpload"]["size"] > 500000) {
+        if ($_FILES["fileToUpload"]["size"] > 5000000) {
             echo "Sorry, your file is too large.";
             $uploadOk = 0;
         }
 
-            if ($imageFileType != "txt" && $imageFileType != "pdf") {
-            echo "Sorry, only TXT and PDF files are allowed.";
+            if ($imageFileType != "zip" && $imageFileType != "rars") {
+            echo "Sorry, only zip files are allowed.";
             $uploadOk = 0;
         }
 

@@ -8,7 +8,6 @@ class DisciplinesController extends Controller
 
         $disciplines = $this->model('Discipline')->getAllDisciplines();
 
-
         return $this->view('disciplines', ['disciplines' => $disciplines]);
     }
 

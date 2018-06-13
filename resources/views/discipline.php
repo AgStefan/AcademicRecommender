@@ -65,6 +65,23 @@
         </div>
 
         <div class="user-comments-holder">
+            <?php if ($disciplineComments): ?>
+                <?php foreach($disciplineComments as $disciplineComment): ?>
+
+                    <div class="container">
+                        <div class="dialogbox">
+                            <div class="body">
+                                <div class="message">
+                                    <p><?= $disciplineComment->content ?></p>
+                                    <hr>
+                                    <p><?= $disciplineComment->content ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php endforeach; ?>
+            <?php endif; ?>
 
         </div>
 
