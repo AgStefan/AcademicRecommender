@@ -46,14 +46,16 @@ require_once("./../resources/elements/header.php"); ?>
                             </button>
                     </div>
             </form>
+
+    <?php foreach ($messages as $message): ?>
+      <?= $message->content ?>
+    <?php endforeach; ?>
+
     <div class="messages-wrapper">
         <h1><img class="img"  src="./images/message_icon.png" alt="">Messages</h1>
         <div class="message-wrapper">
-
             <div class="message-author">
-
                 <p><img class="image5" src="./images/alpaca.jpg" alt="">John Doe</p>
-
             </div>
 
             <div class="message-content">
