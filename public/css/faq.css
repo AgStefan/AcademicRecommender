@@ -72,6 +72,14 @@ div p.anyQuestion {
 
 }
 
+#buttonAdd{
+    font-size: 25px;
+    float: left;
+    color: #00008B;
+    background-color: cadetblue;
+
+}
+
 .faq_holder {
     padding: 20px;
     max-width: 80%;

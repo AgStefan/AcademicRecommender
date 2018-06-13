@@ -55,7 +55,7 @@ if (isset($_SESSION['Error'])){
         <input id="year" name="year" required type="text" placeholder="Enter the year of the discipline">
 
         <div class="button-wrapper">
-            <input onclick="MessageRemove()" type="submit" id="buttonRemove" name="buttonRemove" value="REMOVE" />
+            <input type="submit" id="buttonRemove" name="buttonRemove" value="REMOVE" />
         </div>
     </form>
 

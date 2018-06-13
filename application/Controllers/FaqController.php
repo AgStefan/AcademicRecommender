@@ -26,6 +26,13 @@ class FaqController extends Controller{
         }
     }
 
+    public static function removeQuestion(){
+
+
+    }
+
+
+
 
 
 }

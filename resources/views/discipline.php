@@ -2,11 +2,10 @@
 <div class="content-right">
 
 
-
     <div class="discipline-wrapp">
 
         <div class="discipline-title-wrapp">
-            <h1><?= $discipline ? $discipline->nume  : '' ?></h1>
+            <h1>Titlu Disciplina</h1>
         </div>
 
         <div class="discipline-menu-wrapp">
@@ -51,19 +50,9 @@
 
 
         <div class="comments-write-wrapper">
-            <form action="/upload-comment" method="POST" enctype="multipart/form-data">
-
-
+            <form action="#" method="POST">
                 <div class="comments-holder">
-                    <input type="text" name="subject" id="subject" placeholder="Write a subject">
                     <textarea placeholder="Write a comment" name="comment" id="comment-write-holder" cols="30" rows="10"></textarea>
-                </div>
-
-
-
-                <div class="file-upload">
-                    Select file to upload:
-                    <input type="file" name="fileToUpload" id="fileToUpload">
                 </div>
 
                 <div class="comments-bottom-menu">
