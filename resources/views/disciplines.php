@@ -26,13 +26,7 @@ require_once('./../resources/elements/header.php') ?>
                     <h2 >Discipline:
                         <span ><?= $discipline->nume ?></span></h2>
                     <div class="discipline-extra-information">
-                        <button class="btn">Rating: 3.4 </button>
-                        <span>/</span>
-                        <button class="btn">3 Comments</button>
-                        <span>/</span>
                         <button class="btn">An: <?= $discipline->an ?></button>
-                        <span>/</span>
-
                     </div>
 
                     <div class="discipline-small-description">
