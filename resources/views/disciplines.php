@@ -6,8 +6,6 @@ require_once('./../resources/elements/header.php') ?>
     <!-- Add/Remove a discipline - only for the admin -->
     <?php
 
-    $_SESSION['role'] = 2;
-
     if (isset($_SESSION) && isset($_SESSION['role']) && $_SESSION['role'] == '2' ) {
         require_once('adminDisciplines.php');
     }

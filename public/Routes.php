@@ -70,11 +70,10 @@ Route::set('login', function () {
 
 
 
-Route::set('faq', function () {
+Route::set('FaqModel', function () {
 
-    HomeController::view('faq');
+    HomeController::view('FaqModel');
 });
-
 
 Route::set('seeder', function () {
 
@@ -94,5 +93,12 @@ Route::set('addDisciplines-action', function(){
 Route::set('removeDisciplines-action', function(){
 
     AdminDisciplinesController::removeDiscipline('disciplines');
+});
+
+Route::set('faq', 'FaqController@render');
+
+Route::set('addQuestion-action', function(){
+
+    FaqController::addQuestion('faq');
 });
 
