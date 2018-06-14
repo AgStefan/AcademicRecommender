@@ -6,6 +6,9 @@ class DisciplineController extends Controller
     {
 
         $discipline = $this->model('Discipline')->getDisciplineBySlug($disciplineSlug);
+        if (!$discipline) {
+            header('Location: /');die;
+        }
         $disciplineComments = $this->model('Comment')->getDisciplineComments($discipline->id);
         $disciplineFiles = $this->model('File')->getDisciplineFiles($discipline->id);
         $recommendedComment = $this->model('Comment')->getRecommendedComment($discipline->id);
