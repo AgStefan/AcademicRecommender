@@ -4,6 +4,7 @@ Route::set('discipline/{discipline_slug}', 'DisciplineController@render');
 
 Route::set('upload-comment', 'DisciplineController@uploadComment');
 Route::set('download-file/{file_id}', 'DisciplineController@downloadFile');
+Route::set('disciplines-filter', 'DisciplineController@disciplineFilter');
 
 
 Route::set('/about-us', function () {

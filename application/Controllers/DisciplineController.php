@@ -17,13 +17,34 @@ class DisciplineController extends Controller
             }
         }
 
-        return $this->view('discipline', [
+        return $this->view('discipline-page', [
             'discipline' => $discipline,
             'disciplineComments' => $disciplineComments,
             'disciplineFiles' => $disciplineFiles,
             'recommendedComment' => $recommendedComment,
             'personOfInterest' => $personOfInterest
         ]);
+    }
+
+    public function disciplineFilter() {
+
+        $model = self::model('Discipline');
+
+        $year = $_POST['an'];
+
+        $stmt = $model::$db->prepare("SELECT * from disciplines WHERE an = ?");
+        $stmt->bind_param("i",$year);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $stmt->close();
+
+        while ($row = mysqli_fetch_object($result)) {
+            $objectArray[] = $row;
+        }
+
+        echo isset($objectArray) && $objectArray ?  json_encode($objectArray) : null;
+
+
     }
 
     /**

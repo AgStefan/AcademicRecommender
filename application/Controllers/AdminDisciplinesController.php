@@ -6,7 +6,7 @@ class  AdminDisciplinesController extends Controller
     public static function addDiscipline()
     {
 
-        $model = self::model('AdminDisciplines');
+        $model = self::model('Discipline');
 
         if (isset($_POST['name']) && isset($_POST['year']) && isset($_POST['description'])) {
 
@@ -57,7 +57,7 @@ class  AdminDisciplinesController extends Controller
     public static function removeDiscipline()
     {
 
-        $model = self::model('AdminDisciplines');
+        $model = self::model('Discipline');
 
         if (isset($_POST['name']) && isset($_POST['year'])) {
 

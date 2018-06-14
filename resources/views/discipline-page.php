@@ -19,16 +19,17 @@
 
             <div id="discipline-info-tab" class="discipline-tab tab-content">
                 <p>Anul: <span><?= $discipline ? $discipline->an : '' ?></span></p>
-                <p>Profesori: <span></span></p>
                 <p>Numar comentarii: <span><?= isset($disciplineComments) ? count($disciplineComments) : '0' ?></span></p>
             </div>
 
             <div id="discipline-persons-tab" class="discipline-tab tab-content">
+                <?php if ($personOfInterest): ?>
                 <h2><?= $personOfInterest ? $personOfInterest->username : '' ?></h2>
 
                 <blockquote>
                     <p>Email: <span><?= $personOfInterest ? $personOfInterest->email : '' ?></span></p>
                 </blockquote>
+                <?php endif; ?>
             </div>
 
             <div id="discipline-materials-tab" class="discipline-tab tab-content">
@@ -59,8 +60,6 @@
                     <input type="text" name="subject" id="subject" placeholder="Write a subject">
                     <textarea placeholder="Write a comment" name="comment" id="comment-write-holder" cols="30" rows="10"></textarea>
                 </div>
-
-
 
                 <div class="file-upload">
                     Select file to upload:
