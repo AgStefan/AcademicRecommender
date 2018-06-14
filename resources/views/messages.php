@@ -23,7 +23,12 @@ require_once("./../resources/elements/header.php"); ?>
            echo $_SESSION['Error'];
 
            unset($_SESSION['Error']);
+
+
+
+
        }
+
     ?>
 </div>
 
@@ -47,97 +52,27 @@ require_once("./../resources/elements/header.php"); ?>
                     </div>
             </form>
 
-    <?php foreach ($messages as $message): ?>
-      <?= $message->content ?>
-    <?php endforeach; ?>
+
+
 
     <div class="messages-wrapper">
         <h1><img class="img"  src="./images/message_icon.png" alt="">Messages</h1>
-        <div class="message-wrapper">
-            <div class="message-author">
-                <p><img class="image5" src="./images/alpaca.jpg" alt="">John Doe</p>
+
+        <?php if (isset($messages) && $messages): ?>
+            <?php foreach ($messages as $message): ?>
+            <div class="message-wrapper">
+                <div class="message-author">
+                    <p><?= $message ? $message->username : '' ?></p>
+                </div>
+
+                <div class="message-content">
+                    <time><?= $message ? $message->date_time : '' ?></time>
+                    <p><?= $message ? $message->content : '' ?></p>
+                </div>
             </div>
 
-            <div class="message-content">
-                <time>21:35</time>
-                <p>I can't make it today.</p>
-            </div>
-            <div class="messages-button-wrapper">
-                <button type="button">Reply</button>
-            </div>
-        </div>
-
-        <div class="message-wrapper">
-            <div class="message-author">
-
-                <p><img class="image5" src="./images/dog.jpg" alt="">John Doe</p>
-
-            </div>
-
-            <div class="message-content">
-                <time>19:41</time>
-                <p>I am on my way.</p>
-                <button type="button">Reply</button>
-            </div>
-        </div>
-
-        <div class="message-wrapper">
-            <div class="message-author">
-
-                <p><img class="image5" src="./images/tattoo.jpg" alt="">John Doe</p>
-
-            </div>
-
-            <div class="message-content">
-                <time>13:17</time>
-                <p>Can you buy some food?</p>
-                <button type="button">Reply</button>
-            </div>
-        </div>
-
-        <div class="message-wrapper">
-            <div class="message-author">
-
-                <p><img class="image5" src="./images/pink.jpg" alt="">John Doe</p>
-
-            </div>
-
-            <div class="message-content">
-                <time>12:12</time>
-                <p>I will stay home.</p>
-                <button type="button">Reply</button>
-            </div>
-        </div>
-
-        <div class="message-wrapper">
-            <div class="message-author">
-
-                <p><img class="image5" src="./images/guy.jpg" alt="">John Doe</p>
-
-            </div>
-            <div class="message-content">
-                <time>10:10</time>
-                <p>Will you come today?</p>
-            </div>
-        </div>
-
-        <div class="message-wrapper">
-            <div class="message-author">
-
-                <p><img class="image5" src="./images/alpaca.jpg" alt="">John Doe</p>
-
-            </div>
-            <div class="message-content">
-                <time>09:20</time>
-                <p>I have to be there by 4 p.m.</p>
-
-            </div>
-            <div class="messages-button-wrapper">
-                <button type="button">Reply</button>
-            </div>
-
-        </div>
-
+            <?php endforeach; ?>
+        <?php endif; ?>
 
     </div>
 </div>

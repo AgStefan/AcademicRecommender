@@ -22,10 +22,7 @@ Route::set('account-settings', function () {
 });
 Route::set('disciplines', 'DisciplinesController@render');
 
-Route::set('messages', function () {
-
-    HomeController::view('messages');
-});
+Route::set('messages', 'MessageController@render');
 
 Route::set('message-action', function() {
     MessageController::message();
@@ -67,10 +64,7 @@ Route::set('FaqModel', function () {
     HomeController::view('FaqModel');
 });
 
-Route::set('seeder', function () {
-
-    BaseModel::seeder();
-});
+Route::set('seeder', 'BaseModel@seeder');
 
 Route::set('logout', 'AuthController@logout');
 

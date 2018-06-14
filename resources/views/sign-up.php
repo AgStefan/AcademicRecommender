@@ -40,10 +40,6 @@
             <label for="username"><b>Username</b></label>
             <input id="username" onInput="checkUsername()" title="Username must not be blank and contain only letters, numbers and underscores." required pattern="\w+" name="username" type="text" placeholder="Enter Username">
 
-            <br><div class = "userspan">
-                <span style = "font-size:15px"id = "usernamestatus"></span>
-            </div>
-
         </div>
 
 

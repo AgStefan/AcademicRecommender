@@ -14,6 +14,7 @@ class BaseModel {
      *
      */
     public static function seeder () {
+        session_destroy();
         self::$db = Database::connection();
         self::executeSeeder();
     }

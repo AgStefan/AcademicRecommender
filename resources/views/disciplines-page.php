@@ -11,7 +11,7 @@ require_once('./../resources/elements/header.php') ?>
     }
 
     ?>
-
+    <?php if ($disciplines): ?>
 <div class="container" style="margin-bottom: 50px;">
     <label for="an">
         <input onclick="handleClick(this);" id="an-1" type="radio" name="an" value="1">
@@ -22,6 +22,7 @@ require_once('./../resources/elements/header.php') ?>
         Anul 2
     </label>
 </div>
+    <?php endif; ?>
 
     <div class="disciplineswrapper" id="disciplineswrapper">
         <?php if ($disciplines): ?>
@@ -66,11 +67,11 @@ require_once('./../resources/elements/header.php') ?>
             hr.onreadystatechange = function () {
                 console.log(hr.responseText);
                 if (hr.readyState == 4) {
+                    var html = '';
                     if (hr.status == 200 && hr.responseText) {
                         var items = JSON.parse(hr.responseText);
                         var html = '';
                         for(var i = 0; i < items.length; ++i) {
-                            console.log(items[i]['an']);
 
                             html += '<div class="disciplinewrapper">';
 
@@ -101,10 +102,11 @@ require_once('./../resources/elements/header.php') ?>
                         }
 
 
-                        document.getElementById("disciplineswrapper").innerHTML = html;
+
                     } else {
 //                        document.getElementById('submit').className = "btn btn-primary disabled";
                     }
+                    document.getElementById("disciplineswrapper").innerHTML = html;
                 }
             }
 
