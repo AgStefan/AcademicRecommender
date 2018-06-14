@@ -37,6 +37,21 @@ function getCurrentUserRole () {
     return false;
 }
 
+function getCurrentUserId () {
+    if (isset($_SESSION) && $_SESSION['email']) {
+        $stmt = BaseModel::$db->prepare('SELECT id from users  WHERE email = ?');
+        $stmt->bind_param('s', $_SESSION['email']);
+        $stmt->execute();
+        $stmt->bind_result($userId);
+        $stmt->fetch();
+        $stmt->close();
+
+
+        return $userId;
+    }
+    return false;
+}
+
 function slugify($text)
 {
     // replace non letter or digits by -

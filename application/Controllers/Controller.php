@@ -10,6 +10,7 @@ class Controller {
     public static function view ($viewName, $datum = []) {
 
         foreach ($datum as $arrayKey => $data ) {
+
             $$arrayKey = $data;
         }
 
