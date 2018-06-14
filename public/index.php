@@ -23,7 +23,7 @@ function removeIfFirstLetter($haystack, $character) {
 }
 
 function getCurrentUserRole () {
-    if (isset($_SESSION) && $_SESSION['email']) {
+    if (isset($_SESSION) && isset($_SESSION['email']) && $_SESSION['email']) {
         $stmt = BaseModel::$db->prepare('SELECT roleId from users  WHERE email = ?');
         $stmt->bind_param('s', $_SESSION['email']);
         $stmt->execute();
@@ -38,7 +38,7 @@ function getCurrentUserRole () {
 }
 
 function getCurrentUserId () {
-    if (isset($_SESSION) && $_SESSION['email']) {
+    if (isset($_SESSION) && isset($_SESSION['email']) && $_SESSION['email']) {
         $stmt = BaseModel::$db->prepare('SELECT id from users  WHERE email = ?');
         $stmt->bind_param('s', $_SESSION['email']);
         $stmt->execute();
