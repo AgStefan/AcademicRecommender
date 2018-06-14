@@ -33,9 +33,19 @@
             ?>
         </div>
         <hr>
-        <img class="image1" src="./images/username.png" alt="">
-        <label for="username"><b>Username</b></label>
-        <input id="username" title="Username must not be blank and contain only letters, numbers and underscores." required pattern="\w+" name="username" type="text" placeholder="Enter Username">
+
+
+        <div class="form-group">
+            <img class="image1" src="./images/username.png" alt="">
+            <label for="username"><b>Username</b></label>
+            <input id="username" onInput="checkUsername()" title="Username must not be blank and contain only letters, numbers and underscores." required pattern="\w+" name="username" type="text" placeholder="Enter Username">
+
+            <br><div class = "userspan">
+                <span style = "font-size:15px"id = "usernamestatus"></span>
+            </div>
+
+        </div>
+
 
         <img class="image1" src="./images/email_icon.jpg" alt="">
         <label for="email"><b>Email</b></label>
@@ -62,11 +72,15 @@
         <label for="rather-not-say">Rather not say</label>
         <div class="clearfix">
 
-            <button type="submit" class="signupbtn">Sign Up</button>
+            <button id="submit" type="submit" class="signupbtn">Sign Up</button>
 
         </div>
     </form>
 </div>
+
+
+
+
 </body>
 </html>
 

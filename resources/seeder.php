@@ -77,7 +77,8 @@ CREATE TABLE messages (
 CREATE TABLE files (
     id INTEGER NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (ID),
-    name VARCHAR(255)
+    name VARCHAR(255),
+    nr_downloads INTEGER
 );
 
 INSERT INTO roles VALUES ( 1, 'member' );

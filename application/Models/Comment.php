@@ -13,7 +13,15 @@ class Comment extends  BaseModel {
             $objectArray[] = $row;
         }
 
-        $stmt = $this::$db->prepare("SELECT * from files WHERE id = '$slug'");
+        return isset($objectArray) && $objectArray ? $objectArray : null;
+    }
+
+    public static function getRecommendedComment($disciplineId) {
+
+        $mostDownloadableFile = File::getMostDownloadableFile($disciplineId);
+
+        $stmt = self::$db->prepare('SELECT * from comments  WHERE file_id = ?');
+        $stmt->bind_param('i', $mostDownloadableFile->id);
         $stmt->execute();
         $result = $stmt->get_result();
         $stmt->close();
@@ -21,12 +29,8 @@ class Comment extends  BaseModel {
         $row = mysqli_fetch_object($result);
 
         return $row;
-
-
-        $objectArray['files'] =
-var_dump($objectArray);die;
-        return isset($objectArray) && $objectArray ? $objectArray : null;
     }
+
 
     public function getCommentFiles($commentId) {
 

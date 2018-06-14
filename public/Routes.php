@@ -3,23 +3,13 @@
 Route::set('discipline/{discipline_slug}', 'DisciplineController@render');
 
 Route::set('upload-comment', 'DisciplineController@uploadComment');
-
+Route::set('download-file/{file_id}', 'DisciplineController@downloadFile');
+Route::set('disciplines-filter', 'DisciplineController@disciplineFilter');
 
 
 Route::set('/about-us', function () {
-//    AboutUsController::showDefaultMessage();
     HomeController::view('about-us');
 });
-
-
-
-//Route::set('/discipline/{discipline_slug}', function ($asdf) {
-//    var_dump($asdf);die;
-////    AboutUsController::showDefaultMessage();
-//    DisciplineController::view('discipline');
-//});
-
-
 
 
 Route::set('home', function () {
@@ -82,10 +72,7 @@ Route::set('seeder', function () {
     BaseModel::seeder();
 });
 
-Route::set('logout', function () {
-
-    HomeController::view('logout');
-});
+Route::set('logout', 'AuthController@logout');
 
 Route::set('addDisciplines-action', function(){
 
@@ -102,9 +89,14 @@ Route::set('addQuestion-action', function(){
     FaqController::addQuestion('faq');
 });
 
-Route::set('faq', function(){
+Route::set('removeQuestion-action', function(){
 
     FaqController::removeQuestion('faq');
 });
 
 Route::set('faq', 'FaqController@render');
+
+Route::set('addAnswer-action', function(){
+
+    FaqController::addAnswer('faq');
+});

@@ -23,7 +23,7 @@ class BaseModel {
      * Database seeder execution function
      *
      */
-    public function executeSeeder () {
+    public static function executeSeeder () {
 
 
         $con = self::$db;
@@ -43,7 +43,7 @@ class BaseModel {
             while (mysqli_next_result($con));
         }
 
-        echo 'Database seeding took place!';
+        header('Location: /');
     }
 
 }

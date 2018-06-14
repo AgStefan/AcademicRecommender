@@ -84,3 +84,7 @@ input[type=text]:focus, input[type=password]:focus {
      }
 
 }
+
+.userspan {
+    min-height: 40px;
+}

@@ -1,5 +1,11 @@
 <?php
 session_start();
+error_reporting(E_ALL); // or E_STRICT
+ini_set("display_errors",1);
+ini_set("memory_limit","5000M");
+
+
+
 require_once('Routes.php');
 
 function get_string_between($string, $start = '{', $end = '}') {
@@ -16,6 +22,20 @@ function removeIfFirstLetter($haystack, $character) {
     return $pos ? substr($haystack, 1) : $haystack;
 }
 
+function getCurrentUserRole () {
+    if (isset($_SESSION) && $_SESSION['email']) {
+        $stmt = BaseModel::$db->prepare('SELECT roleId from users  WHERE email = ?');
+        $stmt->bind_param('s', $_SESSION['email']);
+        $stmt->execute();
+        $stmt->bind_result($userRoleId);
+        $stmt->fetch();
+        $stmt->close();
+
+
+        return $userRoleId;
+    }
+    return false;
+}
 
 function slugify($text)
 {
